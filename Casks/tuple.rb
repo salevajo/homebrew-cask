@@ -1,6 +1,6 @@
 cask 'tuple' do
-  version '0.55.0,2019-11-20-80c5fb33'
-  sha256 '0c280b76ca572c1a26d5a9c85cad7dd5dff51ab6ee8aed7908eb6821e07896c4'
+  version '0.57.0,2019-12-11-829d12d3'
+  sha256 '51a93d72936d1b55a933234573e5f333f5e753ea0bfcbd5c3ea614c861225242'
 
   # s3.us-east-2.amazonaws.com/tuple-releases was verified as official when first introduced to the cask
   url "https://s3.us-east-2.amazonaws.com/tuple-releases/production/sparkle/tuple-#{version.before_comma}-#{version.after_comma}.zip"
