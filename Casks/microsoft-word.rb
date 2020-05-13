@@ -1,8 +1,8 @@
 cask 'microsoft-word' do
-  version '16.32.19120802'
-  sha256 'e3755ffe5ac3146f36810f666d1594059bd48c349026866972bcff42580ea6fe'
+  version '16.37.20051002'
+  sha256 '0b2095c503bad82665a61feb7a6a4a12c69e91146160e3a91a16fe910e3356fa'
 
-  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate was verified as official when first introduced to the cask
+  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_#{version}_Installer.pkg"
   appcast 'https://docs.microsoft.com/en-us/officeupdates/update-history-office-for-mac'
   name 'Microsoft Word'

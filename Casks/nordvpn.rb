@@ -1,9 +1,9 @@
 cask 'nordvpn' do
-  version '5.2.0'
-  sha256 '32428319fa94ddc1ef325ab4d021b151ca219400fecfd6643ebb3481f8391a45'
+  version '5.5.4'
+  sha256 'cd9eae7d3baa507390178e6044cc5fa0fda3227901858d3a39f4ef1cc1b73de9'
 
-  # downloads.nordcdn.com/apps was verified as official when first introduced to the cask
-  url "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/#{version}/NordVPN.pkg"
+  # downloads.nordcdn.com/ was verified as official when first introduced to the cask
+  url 'https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/latest/NordVPN.pkg'
   appcast 'https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/latest/update_pkg.xml'
   name 'NordVPN'
   homepage 'https://nordvpn.com/'
@@ -13,7 +13,10 @@ cask 'nordvpn' do
   pkg 'NordVPN.pkg'
 
   uninstall quit:       'com.nordvpn.NordVPN',
-            launchctl:  'com.nordvpn.NordVPN.Helper',
+            launchctl:  [
+                          'com.nordvpn.osx.helper',
+                          'com.nordvpn.NordVPN.Helper',
+                        ],
             delete:     '/Library/PrivilegedHelperTools/com.nordvpn.NordVPN.Helper',
             login_item: 'NordVPN',
             pkgutil:    'com.nordvpn.osx'

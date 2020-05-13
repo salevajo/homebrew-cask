@@ -1,8 +1,8 @@
 cask 'praat' do
-  version '6.1.08'
-  sha256 '40ccbabc95295157a5746ebaefd699500be4434720e10d333650b18dc4eaf8b8'
+  version '6.1.14'
+  sha256 '08fbd3f4878d2312f92542ce7d604d398b2506c851c0bb072bd884b6d6846f8a'
 
-  # github.com/praat/praat was verified as official when first introduced to the cask
+  # github.com/praat/praat/ was verified as official when first introduced to the cask
   url "https://github.com/praat/praat/releases/download/v#{version}/praat#{version.no_dots}_mac64.dmg"
   appcast 'https://github.com/praat/praat/releases.atom'
   name 'Praat'

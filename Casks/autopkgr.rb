@@ -1,8 +1,8 @@
 cask 'autopkgr' do
-  version '1.5.1'
-  sha256 '11c3ce33822f25053731bb084b6cb0d688461306a43b3782f045bdf5745c0904'
+  version '1.5.3'
+  sha256 'd861c20487d297f6078626cc1e7968801582bd00f8bd089fd8ce97e86c0d46cc'
 
-  # github.com/lindegroup/autopkgr was verified as official when first introduced to the cask
+  # github.com/lindegroup/autopkgr/ was verified as official when first introduced to the cask
   url "https://github.com/lindegroup/autopkgr/releases/download/v#{version}/AutoPkgr-#{version}.dmg"
   appcast 'https://github.com/lindegroup/autopkgr/releases.atom'
   name 'AutoPkgr'

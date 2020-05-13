@@ -1,6 +1,6 @@
 cask 'r' do
-  version '3.6.2'
-  sha256 '96bdb2a2017bd34f5ead2f7a7b537073e76a212ffdf1df25dddbe93d03bba843'
+  version '4.0.0'
+  sha256 'dd368aa58108113f0e0e0168304bb0f1f36d72de7c83dffebf025f806bb1662f'
 
   url "https://cloud.r-project.org/bin/macosx/R-#{version}.pkg"
   appcast 'https://cloud.r-project.org/bin/macosx/'
@@ -11,7 +11,10 @@ cask 'r' do
 
   pkg "R-#{version}.pkg"
 
-  uninstall pkgutil: 'org.r-project*',
+  uninstall pkgutil: [
+                       'org.r-project*',
+                       'org.R-project*',
+                     ],
             delete:  [
                        '/Library/Frameworks/R.Framework',
                        '/usr/bin/R',

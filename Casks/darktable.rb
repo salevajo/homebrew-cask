@@ -1,8 +1,8 @@
 cask 'darktable' do
-  version '2.6.3.1'
-  sha256 'cb79d40f7fb03ff9b4701c5f28d5f4d91b102756f48d970354d7102740e36f6d'
+  version '3.0.2'
+  sha256 'b71dab1b4f0ad796055f6d725a82913ad08f609de6ca96d65dbe6ffbeecb6416'
 
-  # github.com/darktable-org/darktable was verified as official when first introduced to the cask
+  # github.com/darktable-org/darktable/ was verified as official when first introduced to the cask
   url "https://github.com/darktable-org/darktable/releases/download/release-#{version.major_minor_patch}/darktable-#{version}.dmg"
   appcast 'https://github.com/darktable-org/darktable/releases.atom'
   name 'darktable'

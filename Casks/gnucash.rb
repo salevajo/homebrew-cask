@@ -1,9 +1,9 @@
 cask 'gnucash' do
-  version '3.7,1'
-  sha256 'b687fb0a17b15e735a29be83354409fb8059aebf0bd97079b74eac3dfc4cbeac'
+  version '3.10,1'
+  sha256 '053764da1b4f87e2851372912ad503447bf96cd111b819a92f02319343f592f6'
 
-  # github.com/Gnucash/gnucash was verified as official when first introduced to the cask
-  url "https://github.com/Gnucash/gnucash/releases/download/#{version.before_comma}/Gnucash-Intel-#{version.before_comma}-#{version.after_comma}.dmg"
+  # github.com/Gnucash/gnucash/ was verified as official when first introduced to the cask
+  url "https://github.com/Gnucash/gnucash/releases/download/#{version.before_comma}/Gnucash-Intel-#{version.before_comma.chomp('b')}-#{version.after_comma}.dmg"
   appcast 'https://github.com/Gnucash/gnucash/releases.atom'
   name 'GnuCash'
   homepage 'https://www.gnucash.org/'

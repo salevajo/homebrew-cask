@@ -1,6 +1,6 @@
 cask 'visual-studio-code' do
-  version '1.41.0'
-  sha256 '15a225fdc285bbf05a4e2ebd77fd6002b0914af5d955039c0ca580119456cd5a'
+  version '1.45.0'
+  sha256 'c924f6937c6cdd6aedc82c98179deb783e354c057799caba69963dd5add16570'
 
   url "https://update.code.visualstudio.com/#{version}/darwin/stable"
   appcast 'https://vscode-update.azurewebsites.net/api/update/darwin/stable/VERSION'
@@ -18,6 +18,7 @@ cask 'visual-studio-code' do
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.vscode.sfl*',
                '~/Library/Caches/com.microsoft.VSCode',
                '~/Library/Caches/com.microsoft.VSCode.ShipIt',
+               '~/Library/Preferences/ByHost/com.microsoft.VSCode.ShipIt.*.plist',
                '~/Library/Preferences/com.microsoft.VSCode.helper.plist',
                '~/Library/Preferences/com.microsoft.VSCode.plist',
                '~/Library/Saved Application State/com.microsoft.VSCode.savedState',

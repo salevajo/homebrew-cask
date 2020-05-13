@@ -1,8 +1,9 @@
 cask 'handbrake' do
-  version '1.3.0'
-  sha256 '6789cdd2054bccb1d623d0ff32e4246d4d4c49c21cec85a7d1ea5922b5075a55'
+  version '1.3.2'
+  sha256 'f3680d583a1c1ebe0e0a5316ee22d224d48cb3c5be14af29b14ab9071744184f'
 
-  url "https://download.handbrake.fr/handbrake/releases/#{version}/HandBrake-#{version}.dmg"
+  # github.com/HandBrake/HandBrake/ was verified as official when first introduced to the cask
+  url "https://github.com/HandBrake/HandBrake/releases/download/#{version}/HandBrake-#{version}.dmg"
   appcast 'https://github.com/HandBrake/HandBrake/releases.atom'
   name 'HandBrake'
   homepage 'https://handbrake.fr/'

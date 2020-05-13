@@ -1,8 +1,8 @@
 cask 'wickrme' do
-  version '5.42.15'
-  sha256 '7cf4349b9f97facd2e9257178ad018d5f359d17bb127a4ea90092a1604ebda4d'
+  version '5.53.6'
+  sha256 'b71528827fbfa25d13f1f8006ac13fbdb5e191849ab4c794d1debf1bad9f9e18'
 
-  # s3.amazonaws.com/static.wickr.com was verified as official when first introduced to the cask
+  # s3.amazonaws.com/static.wickr.com/ was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/static.wickr.com/downloads/mac/me/WickrMe-#{version}.dmg"
   appcast 'https://pro-download.wickr.com/api/multiVerify/pro/undefined/'
   name 'Wickr Me'

@@ -1,9 +1,10 @@
 cask 'sherlock' do
-  version '1.7.3'
-  sha256 '41c48300fc7989f080acab97888a4ea656ca7107410ecb24a555c9a2d57f5bf9'
+  version '1.7.5'
+  sha256 'd73e08704081b4b87c89a84eaa9deff4b303c2746a76b1fe56000cc1c90a34da'
 
-  url 'https://sherlock.inspiredcode.io/download-dmg'
-  appcast 'https://updates.devmate.com/io.inspiredcode.Sherlock.xml'
+  # dl.devmate.com/io.inspiredcode.Sherlock/ was verified as official when first introduced to the cask
+  url 'https://dl.devmate.com/io.inspiredcode.Sherlock/Sherlock.dmg'
+  appcast 'http://sparkle.sherlock.inspiredcode.io'
   name 'Sherlock'
   homepage 'https://sherlock.inspiredcode.io/'
 

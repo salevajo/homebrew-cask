@@ -1,6 +1,6 @@
 cask 'screens' do
-  version '4.7.2,25530'
-  sha256 'bdf45d57e11f78e5288a39c0f17735e09d032ea165c810ead740b8265f30d54f'
+  version '4.7.5,25638'
+  sha256 'da229825486bbc13fd7ba4c6d9121425869902d751885dc652620d8804467352'
 
   url "https://updates.edovia.com/com.edovia.screens#{version.major}.mac/Screens_#{version.before_comma}b#{version.after_comma}.zip"
   appcast "https://updates.edovia.com/com.edovia.screens#{version.major}.mac/appcast.xml"

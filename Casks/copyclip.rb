@@ -1,6 +1,6 @@
 cask 'copyclip' do
-  version '2.9.92'
-  sha256 '9806fa5d22e79ecbcd6cb1d217b0b8b6ad723b0fd19619229ec3deaa9b6a67e0'
+  version '2.9.97'
+  sha256 'ef40942a284f8af9484682b28ae9aa922f4b54ebf2b1c1c5d1b0bf3aa95b60fc'
 
   # rink.hockeyapp.net/api/2/apps/ffb436060eb379c0cb23097402e92379 was verified as official when first introduced to the cask
   url 'https://rink.hockeyapp.net/api/2/apps/ffb436060eb379c0cb23097402e92379?format=zip'

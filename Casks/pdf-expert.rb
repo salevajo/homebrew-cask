@@ -1,8 +1,8 @@
 cask 'pdf-expert' do
-  version '2.4.29,641'
-  sha256 'e61de5665f471a8ad8a5a0b9e9775573c358e17e765cffcdc354358ad290a536'
+  version '2.5.5,679'
+  sha256 'a1082a92f469cea4fe1924f3ead10b1d701de63cb2d1349ce4a7ae8fee5cfcc9'
 
-  # d1ke680phyeohy.cloudfront.net was verified as official when first introduced to the cask
+  # d1ke680phyeohy.cloudfront.net/ was verified as official when first introduced to the cask
   url "https://d1ke680phyeohy.cloudfront.net/versions/#{version.after_comma}/PDFExpert.dmg"
   appcast 'https://d1ke680phyeohy.cloudfront.net/release/appcast.xml'
   name 'PDF Expert'

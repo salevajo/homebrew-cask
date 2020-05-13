@@ -1,6 +1,6 @@
 cask 'keepingyouawake' do
-  version '1.5.0'
-  sha256 '214e2d9a7d177abd1e3e7fddb6c02842c2ec21fc6a4da756152989b4c22c3aba'
+  version '1.5.1'
+  sha256 '9a025bb4429845a51e20bb88376f4c0e25209f7c7298f9f5f8e7306da6502021'
 
   url "https://github.com/newmarcel/KeepingYouAwake/releases/download/#{version}/KeepingYouAwake-#{version}.zip"
   appcast 'https://github.com/newmarcel/KeepingYouAwake/releases.atom'
@@ -12,6 +12,9 @@ cask 'keepingyouawake' do
 
   app 'KeepingYouAwake.app'
 
+  uninstall launchctl: 'info.marcel-dierkes.KeepingYouAwake.Launcher',
+            quit:      'info.marcel-dierkes.KeepingYouAwake'
+
   zap trash: [
                '~/Library/Application Scripts/info.marcel-dierkes.KeepingYouAwake',
                '~/Library/Application Scripts/info.marcel-dierkes.KeepingYouAwake.Launcher',
@@ -20,6 +23,7 @@ cask 'keepingyouawake' do
                '~/Library/Caches/info.marcel-dierkes.KeepingYouAwake',
                '~/Library/Containers/info.marcel-dierkes.KeepingYouAwake',
                '~/Library/Containers/info.marcel-dierkes.KeepingYouAwake.Launcher',
+               '~/Library/Cookies/info.marcel-dierkes.KeepingYouAwake.binarycookies',
                '~/Library/Preferences/info.marcel-dierkes.KeepingYouAwake.plist',
                '~/Library/Saved Application State/info.marcel-dierkes.KeepingYouAwake.savedState',
              ]

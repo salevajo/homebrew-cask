@@ -1,6 +1,6 @@
 cask 'retrobatch' do
-  version '1.3'
-  sha256 '97c326a7c5051c8af59f209f1b53e28025744d1fd851ec1299b23e84c4c5e3b5'
+  version '1.4.1'
+  sha256 '06a19f210b62401c80004ea73b5707c30b95899c859225f1e3799f7e020359db'
 
   url 'https://flyingmeat.com/download/Retrobatch.zip'
   appcast "https://www.flyingmeat.com/download/retrobatch#{version.major}update.xml"

@@ -1,12 +1,12 @@
 cask 'lando' do
-  version '3.0.0-rc.23'
-  sha256 'e03ce948aff1366c38dfd914db022930c082aaa9beb30c5e99753762b7a0fe37'
+  version '3.0.1'
+  sha256 '280eff6b2a9b262c122d6cc705f80bdea8dcf3d229400248ffedd7868bbd9ac4'
 
-  # github.com/lando/lando was verified as official when first introduced to the cask
+  # github.com/lando/lando/ was verified as official when first introduced to the cask
   url "https://github.com/lando/lando/releases/download/v#{version}/lando-v#{version}.dmg"
   appcast 'https://github.com/lando/lando/releases.atom'
   name 'Lando'
-  homepage 'https://docs.devwithlando.io/'
+  homepage 'https://docs.lando.dev/'
 
   depends_on cask: 'docker'
 

@@ -1,12 +1,14 @@
 cask 'cleanmymac' do
-  version '4.5.1,1575024206'
-  sha256 '5726b24dc1cd76ff71c38dee5fd8d8fcb09b1f8ab89a4c7ca8a2548390cd9070'
+  version '4.6.3'
+  sha256 '9e0e85fd120bb28b043b868f54a5807f0797b7d0683dc1bf430c1d6ea5dee451'
 
-  # devmate.com/com.macpaw.CleanMyMac was verified as official when first introduced to the cask
-  url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.after_comma}/CleanMyMacX-#{version.major_minor_patch}.zip"
+  # dl.devmate.com/com.macpaw.CleanMyMac was verified as official when first introduced to the cask
+  url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/CleanMyMacX.dmg"
   appcast "https://updates.devmate.com/com.macpaw.CleanMyMac#{version.major}.xml"
   name 'CleanMyMac X'
   homepage 'https://macpaw.com/cleanmymac'
+
+  auto_updates true
 
   app 'CleanMyMac X.app'
 

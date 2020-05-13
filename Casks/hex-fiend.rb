@@ -1,9 +1,9 @@
 cask 'hex-fiend' do
-  version '2.11.0'
-  sha256 'f775a92d79fc5dd39ebe898b1ac8d7d36cde034f96c903caf5ea782e2d402288'
+  version '2.12.0'
+  sha256 '79d581677e912e10db9023fe80376ffd36a53cf06c8c6e3f5dac8be096e4bbbb'
 
-  # github.com/ridiculousfish/HexFiend was verified as official when first introduced to the cask
-  url "https://github.com/ridiculousfish/HexFiend/releases/download/v#{version}/Hex_Fiend_#{version}.dmg"
+  # github.com/ridiculousfish/HexFiend/ was verified as official when first introduced to the cask
+  url "https://github.com/ridiculousfish/HexFiend/releases/download/v#{version}/Hex_Fiend_#{version.major_minor}.dmg"
   appcast 'https://github.com/ridiculousfish/HexFiend/releases.atom'
   name 'Hex Fiend'
   homepage 'https://ridiculousfish.com/hexfiend/'
@@ -15,7 +15,10 @@ cask 'hex-fiend' do
   binary "#{appdir}/Hex Fiend.app/Contents/Resources/hexf"
 
   zap trash: [
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.ridiculousfish.hexfiend.sfl2',
+               '~/Library/Application Support/com.ridiculousfish.HexFiend',
                '~/Library/Caches/com.ridiculousfish.HexFiend',
+               '~/Library/Cookies/com.ridiculousfish.HexFiend.binarycookies',
                '~/Library/Preferences/com.ridiculousfish.HexFiend.plist',
                '~/Library/Saved Application State/com.ridiculousfish.HexFiend.savedState',
              ]

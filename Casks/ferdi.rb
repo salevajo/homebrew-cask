@@ -1,11 +1,12 @@
 cask 'ferdi' do
-  version '5.4.0'
-  sha256 'c7a8d05d77a7816e2d82467c9445f4937a1f11b66a97d28ccdc064178211e932'
+  version '5.5.0'
+  sha256 '7e9d5ff9f4780636bc2595127f4a86fc77b794d87e6de992fa41e7d8f9c95380'
 
-  url "https://github.com/kytwb/ferdi/releases/download/v#{version}/Ferdi-#{version}.dmg"
-  appcast 'https://github.com/kytwb/ferdi/releases.atom'
+  # github.com/getferdi/ferdi/ was verified as official when first introduced to the cask
+  url "https://github.com/getferdi/ferdi/releases/download/v#{version}/Ferdi-#{version}.dmg"
+  appcast 'https://github.com/getferdi/ferdi/releases.atom'
   name 'Ferdi'
-  homepage 'https://github.com/kytwb/ferdi'
+  homepage 'https://getferdi.com/'
 
   auto_updates true
 
@@ -24,6 +25,6 @@ cask 'ferdi' do
                '~/Library/Preferences/com.electron.ferdi.helper.plist',
                '~/Library/Preferences/com.electron.ferdi.plist',
                '~/Library/Preferences/com.kytwb.ferdi.plist',
-               '~/Library/Saved Application State/com.electron.ferdi.savedState',
+               '~/Library/Saved Application State/com.kytwb.ferdi.savedState',
              ]
 end

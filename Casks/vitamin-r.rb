@@ -3,8 +3,8 @@ cask 'vitamin-r' do
     version '2.58'
     sha256 'c6c631430b44359aa022d9ca5ca6e98dbdf7258f2ceae0353f344a035682661e'
   else
-    version '3.13'
-    sha256 'f97c2cf73c642b0d9d4d121246c901fce6c505e2a20e51e2c04a1c2db9c9c9cd'
+    version '3.15'
+    sha256 'd194732284f22982b53e1f26d57a5706fd1fcccda9a6fd892d74760c65b1a13a'
   end
 
   url "https://www.publicspace.net/download/signedVitamin#{version.major}.zip"

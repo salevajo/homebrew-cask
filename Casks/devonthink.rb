@@ -1,10 +1,9 @@
 cask 'devonthink' do
-  version '3.0.3'
-  sha256 'e34cba7acf37df73f04a69d21e16c6af81d38c9f3d51d44ad46692ec1747f5dd'
+  version '3.0.4'
+  sha256 '58f2dc9877505782dc3529a4c805f4faa29728ea8c4d276670935dd779b21e31'
 
-  # s3.amazonaws.com/DTWebsiteSupport was verified as official when first introduced to the cask
-  url "https://s3.amazonaws.com/DTWebsiteSupport/download/devonthink/#{version}/DEVONthink_#{version.major}.dmg.zip"
-  appcast "https://www.devontechnologies.com/Sparkle/DEVONthink#{version.major}.xml"
+  url "https://download.devontechnologies.com/download/devonthink/#{version}/DEVONthink_#{version.major}.app.zip"
+  appcast 'https://api.devontechnologies.com/1/apps/sparkle/sparkle.php?id=300900000'
   name 'DEVONthink'
   homepage 'https://www.devontechnologies.com/apps/devonthink/'
 
@@ -20,6 +19,8 @@ cask 'devonthink' do
                '~/Library/Caches/com.devon-technologies.think*',
                '~/Library/Containers/com.devon-technologies.*',
                '~/Library/Cookies/com.devon-technologies.think*.binarycookies',
+               '~/Library/Group Containers/*.devon-technologies.*',
+               '~/Library/Group Containers/*.think*',
                '~/Library/Metadata/com.devon-technologies.think*',
                '~/Library/Preferences/com.devon-technologies.think*',
                '~/Library/Saved Application State/com.devon-technologies.think*.savedState',

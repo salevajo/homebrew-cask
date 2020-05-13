@@ -1,10 +1,10 @@
 cask 'skype' do
-  version '8.55.0.135'
-  sha256 '5c24605f89c5a88fa82c2652edf1926f5d9954c5d61e8bf9c55a895cfdc5817e'
+  version '8.59.0.77'
+  sha256 'c6cb1ce6fc29533f2bdc2a9e494d91068ce7b18590126dc9af4c1fb20dae3068'
 
-  # endpoint920510.azureedge.net/s4l/s4l/download/mac was verified as official when first introduced to the cask
+  # endpoint920510.azureedge.net/s4l/s4l/download/mac/ was verified as official when first introduced to the cask
   url "https://endpoint920510.azureedge.net/s4l/s4l/download/mac/Skype-#{version}.dmg"
-  appcast 'https://get.skype.com/s4l-update?version&os=mac&ring=production&app=s4l'
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.skype.com/mac.download'
   name 'Skype'
   homepage 'https://www.skype.com/'
 

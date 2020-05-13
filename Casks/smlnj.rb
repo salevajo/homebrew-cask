@@ -1,8 +1,8 @@
 cask 'smlnj' do
-  version '110.95'
-  sha256 '3df3f31f3882ca1ac0755573a649212873ef2b2ec4ccbb939904b59732018976'
+  version '110.97'
+  sha256 '200ab32a192a34a24923d1bc61e18365108b9ab83fa0549f495c1621db49a80f'
 
-  # smlnj.cs.uchicago.edu was verified as official when first introduced to the cask
+  # smlnj.cs.uchicago.edu/ was verified as official when first introduced to the cask
   url "http://smlnj.cs.uchicago.edu/dist/working/#{version}/smlnj-amd64-#{version}.pkg"
   name 'Standard ML of New Jersey'
   homepage 'https://www.smlnj.org/'

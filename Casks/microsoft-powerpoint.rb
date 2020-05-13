@@ -1,8 +1,8 @@
 cask 'microsoft-powerpoint' do
-  version '16.32.19120802'
-  sha256 '404a7017cf9b2e92a0d50ca32b33304ed84d83cf20eaf7f882520f4239af1323'
+  version '16.37.20051002'
+  sha256 '866d97b07c0f65f9a5fbd985392824337bbae058acb54fb2a79bd1ffb8f1c27c'
 
-  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate was verified as official when first introduced to the cask
+  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_#{version}_Installer.pkg"
   appcast 'https://docs.microsoft.com/en-us/officeupdates/update-history-office-for-mac'
   name 'Microsoft PowerPoint'

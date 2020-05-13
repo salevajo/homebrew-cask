@@ -1,8 +1,8 @@
 cask 'freecad' do
   version '0.18.4,16146'
-  sha256 'd0a7188f87bea7551d501c6a8459106f5d0b0f0e9fc34a342dcdac8c677349b2'
+  sha256 :no_check # required as upstream package is updated in-place
 
-  # github.com/FreeCAD/FreeCAD was verified as official when first introduced to the cask
+  # github.com/FreeCAD/FreeCAD/ was verified as official when first introduced to the cask
   url "https://github.com/FreeCAD/FreeCAD/releases/download/#{version.before_comma}/FreeCAD_#{version.major_minor}-#{version.after_comma}-OSX-x86_64-conda-Qt5-Py3.dmg"
   appcast 'https://github.com/FreeCAD/FreeCAD/releases.atom'
   name 'FreeCAD'

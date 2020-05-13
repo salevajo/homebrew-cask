@@ -1,12 +1,11 @@
 cask 'command-tab-plus' do
-  version '1.104,354:1576154336'
-  sha256 'c7d9dd9d9806d32c5d707d1ef5f43bd7e3f65956b41fe593a10278e07ae92084'
+  version '1.110'
+  sha256 'b95aac4557f4f31c808cfe8343239388ddd2c14935638c7f76e45d25414f683a'
 
-  # dl.devmate.com/com.sergey-gerasimenko.Command-Tab was verified as official when first introduced to the cask
-  url "https://dl.devmate.com/com.sergey-gerasimenko.Command-Tab/#{version.after_comma.before_colon}/#{version.after_colon}/Command-Tab-#{version.after_comma.before_colon}.zip"
-  appcast 'https://updates.devmate.com/com.sergey-gerasimenko.Command-Tab.xml'
+  url 'https://noteifyapp.com/download/Command-Tab%20Plus.dmg'
+  appcast 'https://macplus-software.com/downloads/Command-Tab.xml'
   name 'Command-Tab Plus'
-  homepage 'http://commandtab.noteifyapp.com/'
+  homepage 'https://noteifyapp.com/command-tab-plus/'
 
   app 'Command-Tab Plus.app'
 

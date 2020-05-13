@@ -1,16 +1,11 @@
 cask 'lifesize' do
-  version '10.3.7-235'
-  sha256 '7924c29dd00057f3417fb000b700d333a6cf36869ef2637b76e077ebfc813f7d'
+  version '2.210.2665'
+  sha256 '685b7f4ddfa2799824123fe19a9f4a8c8339a79e2d4b32cf1f6768019709be7b'
 
-  # cdn.lifesizecloud.com was verified as official when first introduced to the cask
-  url "https://cdn.lifesizecloud.com/LifesizeCloud-#{version}-signed.pkg"
-  appcast 'https://cdn.lifesizecloud.com/OSX_Clients/Sparkle_Upgrades/LifesizeAppcast.xml'
+  # download.lifesizecloud.com/ was verified as official when first introduced to the cask
+  url "https://download.lifesizecloud.com/Lifesize-#{version}.dmg"
   name 'lifesize'
   homepage 'https://www.lifesize.com/'
 
-  auto_updates true
-
-  pkg "LifesizeCloud-#{version}-signed.pkg"
-
-  uninstall pkgutil: 'com.lifesize.Lifesize-Cloud'
+  app 'Lifesize.app'
 end
