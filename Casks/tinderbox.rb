@@ -1,16 +1,11 @@
 cask 'tinderbox' do
-  if MacOS.version <= :mavericks
-    version '6.4.0'
-    sha256 '765a6245d25f9c2185802f36caa1f620f276637b884260fffa74bf639670e211'
-    app 'TinderboxSix.app'
-  else
-    version '8.6.2'
-    sha256 'a04ed5bc0016320ebebadf979fa2d574c3b98c94c8d0258bf59b7ac103704e29'
-    app "Tinderbox #{version.major}.app"
-  end
+  version '8.7.1'
+  sha256 '6af09200b3b4a95100f43af72d5b838667666c24e7c67c79a29f25527bdf9168'
 
   url "https://www.eastgate.com/download/tbx#{version.no_dots}.dmg"
   appcast 'https://eastgate.com/Tinderbox/download.html'
   name 'Tinderbox'
   homepage 'https://eastgate.com/Tinderbox/'
+
+  app "Tinderbox #{version.major}.app"
 end

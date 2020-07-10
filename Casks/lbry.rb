@@ -1,6 +1,6 @@
 cask 'lbry' do
-  version '0.45.1'
-  sha256 'cc8b120c988767465cc93e5a19149d0a939da7100c8dccfa69698fa97e598895'
+  version '0.46.2'
+  sha256 'fd64bd1aae3a19d141dd4b1e2257b09c0b2cb9beda0560bc39e989d5d6554f12'
 
   # github.com/lbryio/lbry-desktop/ was verified as official when first introduced to the cask
   url "https://github.com/lbryio/lbry-desktop/releases/download/v#{version}/LBRY_#{version}.dmg"

@@ -1,6 +1,6 @@
 cask 'zettlr' do
-  version '1.6.0'
-  sha256 '51076164403cfaf16cd2fb9f22505303e05f448dfb1d914dfd78e82b20a9f3b2'
+  version '1.7.1'
+  sha256 'c4e684f1cec9b240194bded0a2d6ab4eeaca5a84327d7c220b41eb5b1069bb8e'
 
   # github.com/Zettlr/Zettlr/ was verified as official when first introduced to the cask
   url "https://github.com/Zettlr/Zettlr/releases/download/v#{version}/Zettlr-#{version}.dmg"

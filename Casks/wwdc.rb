@@ -1,6 +1,6 @@
 cask 'wwdc' do
-  version '6.2'
-  sha256 '9477a50f1ec984bb1474fc72246d9e095241360cc66d43bbd737fff6a7761a6b'
+  version '7.0.2'
+  sha256 '0bbc4c9734e83cf292837dcab9a19c69f2e61e5db909d96088f416920f8f0ecd'
 
   # github.com/insidegui/WWDC/ was verified as official when first introduced to the cask
   url "https://github.com/insidegui/WWDC/releases/download/#{version}/WWDC_v#{version}.zip"
@@ -9,7 +9,7 @@ cask 'wwdc' do
   homepage 'https://wwdc.io/'
 
   auto_updates true
-  depends_on macos: '>= :high_sierra'
+  depends_on macos: '>= :catalina'
 
   app 'WWDC.app'
 

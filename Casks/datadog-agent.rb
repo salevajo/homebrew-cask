@@ -1,6 +1,6 @@
 cask 'datadog-agent' do
-  version '7.19.1-1'
-  sha256 '35c415cd57e2ae57482959acb19ad6f7675491464ce75484d8e0bf7fb407065c'
+  version '7.20.2-1'
+  sha256 '137c1fe80b0a0901de6dee280b3132788c69a4da6d96e8bdddb59ab4f5395e93'
 
   # dd-agent.s3.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://dd-agent.s3.amazonaws.com/datadog-agent-#{version}.dmg"
@@ -31,7 +31,7 @@ cask 'datadog-agent' do
     If you ever want to start/stop the Agent, please use the Datadog Agent App or datadog-agent command.
     It will start automatically at login, if you want to enable it at startup, run these commands:
 
-    sudo cp '/opt/datadog-agent/etc/com.datadoghq.agent.plist' /Library/LaunchDaemons
+    sudo cp '/opt/datadog-agent/etc/com.datadoghq.agent.plist.example' /Library/LaunchDaemons/com.datadoghq.agent.plist
     sudo launchctl load -w /Library/LaunchDaemons/com.datadoghq.agent.plist
   EOS
 end

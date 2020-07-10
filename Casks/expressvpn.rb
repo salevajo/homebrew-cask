@@ -1,6 +1,6 @@
 cask 'expressvpn' do
-  version '7.5.6.4'
-  sha256 '0d2c6e4072b543315662e874908c402932d2d09c06fdeb0bd7521b2d858aa681'
+  version '7.9.1.1'
+  sha256 '333f15d1fe75eeeb08fb4a4c25991601868087718ecc9443970a905284a123df'
 
   url "https://download.expressvpn.xyz/clients/mac/expressvpn_mac_#{version}_release.pkg"
   appcast 'https://www.expressvpn.xyz/vpn-software/vpn-mac'
@@ -11,9 +11,9 @@ cask 'expressvpn' do
 
   pkg "expressvpn_mac_#{version}_release.pkg"
 
-  uninstall pkgutil:   'com.expressvpn.ExpressVPN',
-            launchctl: [
-                         'com.expressvpn.ExpressVPN.agent',
-                         'com.expressvpn.ExpressVPN.update',
-                       ]
+  uninstall script:  {
+                       executable: "#{appdir}/ExpressVPN.app/Contents/Resources/uninstall.tool",
+                       input:      ['Yes'],
+                     },
+            pkgutil: 'com.expressvpn.ExpressVPN'
 end

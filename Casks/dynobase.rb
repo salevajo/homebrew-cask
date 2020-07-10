@@ -1,10 +1,10 @@
 cask 'dynobase' do
-  version '0.6.1'
-  sha256 '2e469798300b9090e809d82bd2948d1b23fd42d233586ea2dbdbc2456be1c9ec'
+  version '0.8.4'
+  sha256 'f57ba3510c3191a62ad8701e15640280cd024fbed294c4c984db6fef862a254c'
 
-  # hazel.rwilinski.now.sh was verified as official when first introduced to the cask
-  url 'https://hazel.rwilinski.now.sh/download/darwin'
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_filename.cgi?url=#{url}"
+  # github.com/Dynobase/dynobase was verified as official when first introduced to the cask
+  url "https://github.com/Dynobase/dynobase/releases/download/#{version}/Dynobase-#{version}.dmg"
+  appcast 'https://github.com/Dynobase/dynobase/releases.atom'
   name 'Dynobase'
   homepage 'https://dynobase.dev/'
 

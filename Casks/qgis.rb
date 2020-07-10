@@ -1,10 +1,10 @@
 cask 'qgis' do
-  version '3.12.2'
-  sha256 'f7a61f85f4f278eb45d5a84483bea0ca57b344b4ed6f12d3d507927d7ce97234'
+  version '3.14.0'
+  sha256 '28747af476513f1beeb1c4c22af51a55e0ea7d5dac33d8b3cc568de1c05b68d2'
 
   url 'https://qgis.org/downloads/macos/qgis-macos-pr.dmg'
   appcast 'https://qgis.org/downloads/macos/qgis-macos-pr.sha256sum',
-          configuration: version.dots_to_underscores
+          must_contain: version.dots_to_underscores
   name 'QGIS'
   homepage 'https://www.qgis.org/'
 

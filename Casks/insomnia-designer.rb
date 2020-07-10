@@ -1,12 +1,14 @@
 cask 'insomnia-designer' do
-  version '2020.1.3'
-  sha256 '35de4caeac06a7e62b9898db1f75e20212c1a52df9af578ec78454e817ba566d'
+  version '2020.2.2'
+  sha256 'c12f1469eeece6bb4fc0ace3e8b0a44672e8579fb39cc7721f2a9026bd9cc2bf'
 
   # github.com/Kong/insomnia/ was verified as official when first introduced to the cask
   url "https://github.com/Kong/insomnia/releases/download/designer%40#{version}/Insomnia.Designer-#{version}.dmg"
   appcast 'https://api.insomnia.rest/changelog.json?app=com.insomnia.designer'
   name 'Insomnia Designer'
   homepage 'https://insomnia.rest/'
+
+  auto_updates true
 
   app 'Insomnia Designer.app'
 

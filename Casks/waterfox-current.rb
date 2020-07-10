@@ -1,9 +1,8 @@
 cask 'waterfox-current' do
-  version '2020.05,6820.5.5'
-  sha256 '80608f12658c63074e7f6067d6646dc4998584dac2302f4cac88005ae5753bc1'
+  version '2020.07,6820.6.30'
+  sha256 '7262baa3c17208c720eaeca872388f7a2df3530acc2869228c32bbb208218afc'
 
-  # storage-waterfox.netdna-ssl.com/ was verified as official when first introduced to the cask
-  url "https://storage-waterfox.netdna-ssl.com/releases/osx64/installer/Waterfox%20Current%20#{version.before_comma}%20Setup.dmg"
+  url "https://cdn.waterfox.net/releases/osx64/installer/Waterfox%20Current%20#{version.before_comma}%20Setup.dmg"
   appcast 'https://www.waterfox.net/download/'
   name 'Waterfox Current'
   homepage 'https://www.waterfox.net/'

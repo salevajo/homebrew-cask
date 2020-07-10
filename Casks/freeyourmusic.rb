@@ -1,6 +1,6 @@
 cask 'freeyourmusic' do
-  version '5.3.0'
-  sha256 '26fb2c5ffc8a84a5985fe69c57613fec57b0b83c91863b9768325ff53fc330c4'
+  version '5.5.2'
+  sha256 'e910243934e4e51262a81e61354ed337a38a5d5c0324d629b1a9c0699ee1d60f'
 
   # dzqeytqqx888.cloudfront.net/ was verified as official when first introduced to the cask
   url "https://dzqeytqqx888.cloudfront.net/FreeYourMusic-#{version}.dmg"

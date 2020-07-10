@@ -1,6 +1,6 @@
 cask 'dbeaver-enterprise' do
-  version '7.0.0'
-  sha256 '5981a0896a8823880a88c6cf5417ca9c7b927adb844dfef91dcb819c9ed0c0b2'
+  version '7.1.0'
+  sha256 '020bb975764e7b62e1d4fbe9f2dcf3e9e4250d635cd84759832f48521e43864e'
 
   url "https://dbeaver.com/files/#{version}/dbeaver-ee-#{version}-macos.dmg"
   appcast 'https://dbeaver.com/product/version.xml'

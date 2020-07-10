@@ -1,6 +1,6 @@
 cask 'gitkraken' do
-  version '6.6.0'
-  sha256 '1dff919c0c6af26838747d2d734f6dc5b9d0cd6a5bbf03729540645751589702'
+  version '7.0.1'
+  sha256 '94588f2991f6a7f09ed79668f6f218a37e404d6f0cb9669b069a51edcadcce9c'
 
   # release.axocdn.com/darwin/ was verified as official when first introduced to the cask
   url 'https://release.gitkraken.com/darwin/installGitKraken.dmg'
@@ -18,6 +18,7 @@ cask 'gitkraken' do
                '~/Library/Caches/GitKraken',
                '~/Library/Caches/com.axosoft.gitkraken.ShipIt',
                '~/Library/Caches/com.axosoft.gitkraken',
+               '~/Library/Cookies/com.axosoft.gitkraken.binarycookies',
                '~/Library/Preferences/com.axosoft.gitkraken.helper.plist',
                '~/Library/Preferences/com.axosoft.gitkraken.plist',
                '~/Library/Saved Application State/com.axosoft.gitkraken.savedState',

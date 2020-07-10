@@ -2,14 +2,13 @@ cask 'master-password' do
   version :latest
   sha256 :no_check
 
-  url 'https://ssl.masterpasswordapp.com/masterpassword-mac.zip'
+  url 'http://www.masterpasswordapp.com/masterpassword-mac.zip'
   name 'Master Password'
-  homepage 'https://masterpasswordapp.com/'
+  homepage 'http://www.masterpasswordapp.com/'
 
   app 'Master Password.app'
 
-  uninstall quit:      'com.lyndir.lhunath.MasterPassword.Mac',
-            launchctl: 'com.lyndir.lhunath.MasterPassword.Mac.LoginHelper'
+  uninstall quit: 'com.lyndir.lhunath.MasterPassword.Mac'
 
   zap trash: [
                '~/Library/Application Scripts/com.lyndir.lhunath.MasterPassword.Mac',

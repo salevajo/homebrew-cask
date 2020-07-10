@@ -1,30 +1,26 @@
 cask 'podman' do
-  version '1.6.0,28-gdac7889d'
-  sha256 '10aa54e65084a6db98aa46b90fdcdec7b4ae0eb5d241e65dd360859e43bb1236'
+  version '2.0.2'
+  sha256 '5ae54572d791b1a0f22090c5873ba288c777564d0ea4c23c0a32e3708819c0dc'
 
-  url "https://github.com/containers/libpod/releases/download/v#{version.before_comma}/podman-remote-v#{version.before_comma}-#{version.after_comma}-master-darwin-amd64.tgz"
-  appcast 'https://github.com/containers/libpod/releases.atom'
+  url "https://github.com/containers/podman/releases/download/v#{version}/podman-remote-release-darwin.zip"
+  appcast 'https://github.com/containers/podman/releases.atom'
   name 'podman'
-  homepage 'https://github.com/containers/libpod/'
+  homepage 'https://github.com/containers/podman/'
 
-  binary "podman-v#{version.before_comma}-#{version.after_comma}/podman"
+  binary 'podman'
 
   postflight do
-    man1 = Dir["#{staged_path}/podman-*/docs/*.1"]
+    man1 = Dir["#{staged_path}/docs/*.1"]
     FileUtils.mv(man1, "#{HOMEBREW_PREFIX}/share/man/man1/")
 
-    man5 = Dir["#{staged_path}/podman-*/docs/*.5"]
-    FileUtils.mkdir("#{HOMEBREW_PREFIX}/share/man/man5/") unless File.exist?("#{HOMEBREW_PREFIX}/share/man/man5/")
-    FileUtils.mv(man5, "#{HOMEBREW_PREFIX}/share/man/man5/")
+    FileUtils.mkdir_p "#{ENV['HOME']}/.config/containers"
+    FileUtils.mv("#{staged_path}/containers.conf", "#{ENV['HOME']}/.config/containers/containers.conf") unless File.exist?("#{ENV['HOME']}/.config/containers/containers.conf")
   end
 
   uninstall_postflight do
     man1 = Dir["#{HOMEBREW_PREFIX}/share/man/man1/podman*.1"]
     FileUtils.rm(man1)
-
-    man5 = Dir["#{HOMEBREW_PREFIX}/share/man/man5/podman*.5"]
-    FileUtils.rm(man5)
   end
 
-  zap trash: '~/.config/containers/podman-remote.config'
+  zap trash: '~/.config/containers'
 end

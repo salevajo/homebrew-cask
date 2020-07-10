@@ -1,12 +1,13 @@
 cask 'ableton-live-suite' do
-  version '10.1.13'
-  sha256 'c0007f12b5d3638b77b7bbcb320fcf045bf50d2a6b3c0856d14f0f828dfbf1d8'
+  version '10.1.15'
+  sha256 '7711fcf4b1222c686b72baa1a53174fa8158186d8be022a5a0331a00c6a7ba8c'
 
   url "https://cdn-downloads.ableton.com/channels/#{version}/ableton_live_suite_#{version}_64.dmg"
   appcast "https://www.ableton.com/en/release-notes/live-#{version.major}/"
   name 'Ableton Live Suite'
   homepage 'https://www.ableton.com/en/live/'
 
+  auto_updates true
   depends_on macos: '>= :el_capitan'
 
   app "Ableton Live #{version.major} Suite.app"

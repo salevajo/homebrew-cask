@@ -1,10 +1,10 @@
 cask 'lightproxy' do
-  version '1.1.14'
-  sha256 '4530ecd308c2b7111bc6e5e58f412e8c31575970c4b697b935ee9226484da433'
+  version '1.1.26'
+  sha256 '44007cef95675ccf1412dea30756a754578e7358d365dd061d98135e46a28278'
 
-  # gw.alipayobjects.com/os/LightProxy/ was verified as official when first introduced to the cask
-  url 'https://gw.alipayobjects.com/os/LightProxy/LightProxy.dmg'
-  appcast 'https://github.com/alibaba/lightproxy/tree/master/CHANGELOG'
+  # github.com/alibaba/lightproxy/ was verified as official when first introduced to the cask
+  url "https://github.com/alibaba/lightproxy/releases/download/v#{version}/LightProxy-#{version}.dmg"
+  appcast 'https://github.com/alibaba/lightproxy/releases.atom'
   name 'LightProxy'
   homepage 'https://alibaba.github.io/lightproxy/'
 

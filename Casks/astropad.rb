@@ -1,9 +1,9 @@
 cask 'astropad' do
-  version '3.3.0'
-  sha256 'c72f14f1969477a28dd7de5380dca5a0510d09bb1e64ff04c7f6d6b3c72a7ea1'
+  version '3.4.1'
+  sha256 '6edacd8c0985cd51304618a1ea9963a0a71fdf09be7af56d7d9c336b94b6ff3a'
 
   url "https://downloads.astropad.com/standard/Astropad-#{version}.dmg"
-  appcast 'https://astropad.com/downloads/sparkle.xml'
+  appcast 'https://s3.amazonaws.com/astropad.com/downloads/sparkle.xml'
   name 'Astropad'
   homepage 'https://astropad.com/'
 

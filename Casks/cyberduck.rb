@@ -1,6 +1,6 @@
 cask 'cyberduck' do
-  version '7.3.1.32784'
-  sha256 '0bbfce490817cc6f164ace43f8a8d852d2f3c74aea440430a5bb109c3f7059cf'
+  version '7.4.1.33065'
+  sha256 '84ef2844cd84c1e0cbb163ee66b410a3d5d3dbc0d2bd5ec4d44c71bec99bf765'
 
   url "https://update.cyberduck.io/Cyberduck-#{version}.zip"
   appcast 'https://version.cyberduck.io/changelog.rss'
@@ -14,6 +14,7 @@ cask 'cyberduck' do
   zap trash: [
                '~/Library/Application Support/Cyberduck',
                '~/Library/Caches/ch.sudo.cyberduck',
+               '~/Library/Group Containers/G69SCX94XU.duck',
                '~/Library/Preferences/ch.sudo.cyberduck.plist',
                '~/Library/Saved Application State/ch.sudo.cyberduck.savedState',
              ]

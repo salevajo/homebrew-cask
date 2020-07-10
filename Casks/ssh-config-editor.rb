@@ -1,6 +1,6 @@
 cask 'ssh-config-editor' do
-  version '1.12.2,51'
-  sha256 'b0e76dd9a10f436133934ff78a2dd2c203d449d1c39da8b10685c8173fab344e'
+  version '1.13.1,56'
+  sha256 '6305e3b0f4242e22bccc8f4776b3b0cebc5e7703e58125ac08b55f6468f666c0'
 
   url "https://hejki.org/download/ssheditor/SSHConfigEditor-#{version.after_comma}.zip"
   appcast 'https://hejki.org/download/ssheditor/appcast.xml'

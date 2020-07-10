@@ -2,11 +2,10 @@ cask 'calibre' do
   if MacOS.version <= :high_sierra
     version '3.48.0'
     sha256 '68829cd902b8e0b2b7d5cf7be132df37bcc274a1e5720b4605d2dd95f3a29168'
-    # github.com/kovidgoyal/calibre/ was verified as official when first introduced to the cask
-    url "https://github.com/kovidgoyal/calibre/releases/download/v#{version}/calibre-#{version}.dmg"
+    url "https://download.calibre-ebook.com/#{version}/calibre-#{version}.dmg"
   else
-    version '4.15.0'
-    sha256 '335d84d46c3f01dec853516c73974756a92b177e7926c2776c612fb08d098aeb'
+    version '4.20.0'
+    sha256 '6f4867fc8bf0fbbb8d0d0a6bb8aa0e4b939e12933bc2c8b4ddc08c72ed083071'
     # github.com/kovidgoyal/calibre/ was verified as official when first introduced to the cask
     url "https://github.com/kovidgoyal/calibre/releases/download/v#{version}/calibre-#{version}.dmg"
     appcast 'https://github.com/kovidgoyal/calibre/releases.atom'

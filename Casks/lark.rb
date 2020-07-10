@@ -1,14 +1,12 @@
 cask 'lark' do
-  version '3.22.5'
-  sha256 '59511f6bb7307316a6366845a5d585656179f1425241d7316aa4222369412134'
+  version '3.24.10'
+  sha256 '20b8666ccd0b4de06cdf1c883893a836cee6b3a0ef99d714c7e31e8b6d81a109'
 
   # sf3-ttcdn-tos.pstatp.com/ was verified as official when first introduced to the cask
   url "https://sf3-ttcdn-tos.pstatp.com/obj/ee-appcenter/Lark-#{version}.dmg"
   appcast 'https://www.larksuite.com/api/downloads'
   name 'Lark'
   homepage 'https://www.larksuite.com/'
-
-  depends_on macos: '>= :mavericks'
 
   app 'Lark.app'
 end

@@ -1,6 +1,6 @@
 cask 'gloomhaven-helper' do
-  version '8.3.6'
-  sha256 'c02ee7e43bc16f780b6c168b9735328a8cef69731c993c57ece88557ec94ea4d'
+  version '8.4.4'
+  sha256 'a391db88dd7c1290ae4fe5060014979da7412f8b16cbbe97c598886a3d59581a'
 
   url "https://esotericsoftware.com/files/ghh/GloomhavenHelper-#{version}.zip"
   name 'Gloomhaven Helper'
@@ -19,6 +19,6 @@ cask 'gloomhaven-helper' do
   end
 
   caveats do
-    depends_on_java
+    depends_on_java '8+'
   end
 end

@@ -1,19 +1,18 @@
 cask 'geekbench' do
-  if MacOS.version <= :mavericks
-    version '3.4.2'
-    sha256 '05e1b977a46648d38cf6c641be7ef34722200d0168a10d4372fca771ffa24e28'
-  elsif MacOS.version <= :sierra
+  if MacOS.version <= :sierra
     version '4.4.2'
     sha256 '3c46e630a28a0752afd702fc1cd379edd2420001be22302c932e61751284c0cc'
   else
-    version '5.1.1'
-    sha256 'd14c813f9a8d9cbf643d0f5bffe42f084df63b2095bec86b152157a43a814b1b'
+    version '5.2.2'
+    sha256 '0b9091b94fde9c521e23a2cf9f2a6cf82bb99646a895c49ada26c6def10534c8'
   end
 
   url "https://cdn.geekbench.com/Geekbench-#{version}-Mac.zip"
   appcast "https://www.primatelabs.com/appcast/geekbench#{version.major}.xml"
   name 'Geekbench'
   homepage 'https://www.geekbench.com/'
+
+  auto_updates true
 
   app "Geekbench #{version.major}.app"
 

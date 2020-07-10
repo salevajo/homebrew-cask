@@ -1,6 +1,6 @@
 cask 'betterzip' do
-  version '4.2.5'
-  sha256 '6fda66723dfacba7d7ffbf1817e06031aa7faeec586cd11b9619db28940fa179'
+  version '5.0.2'
+  sha256 'ebbf0faa10d2089eedfe95f17c68d115c07fc2aeacf437d9d51af8d51d00244b'
 
   # macitbetter.s3.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://macitbetter.s3.amazonaws.com/BetterZip-#{version}.zip"
@@ -9,7 +9,7 @@ cask 'betterzip' do
   homepage 'https://macitbetter.com/'
 
   auto_updates true
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :high_sierra'
 
   app 'BetterZip.app'
 

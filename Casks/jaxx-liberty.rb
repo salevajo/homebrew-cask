@@ -1,9 +1,9 @@
 cask 'jaxx-liberty' do
-  version '2.4.1'
-  sha256 '941a96226a4c3d73fafd5b8063b3455df1ecff9a366d2b7f6118838a886a8684'
+  version '2.4.4'
+  sha256 '8b73328c09336c661b2a6ecf3ab9663caa75c61f3d4b13eb0e8198f3f0f8b102'
 
   url "https://download-liberty.jaxx.io/Jaxx.Liberty-#{version}.dmg"
-  appcast 'https://jaxx.io/downloads.html'
+  appcast 'https://jaxx.io/changeLog'
   name 'Jaxx Blockchain Wallet'
   homepage 'https://jaxx.io/'
 

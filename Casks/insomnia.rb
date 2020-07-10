@@ -1,9 +1,9 @@
 cask 'insomnia' do
-  version '7.1.1'
-  sha256 '7718dd2c1a6ec0edafe36116d9123cda80b769abadc2d4fc5c5389922c7dfa6f'
+  version '2020.2.2'
+  sha256 'ba80c77f973009af3f72dfa6f06202c41f157aa36b8dbc6c175444516796819f'
 
   # github.com/Kong/insomnia/ was verified as official when first introduced to the cask
-  url "https://github.com/Kong/insomnia/releases/download/v#{version}/Insomnia-#{version}.dmg"
+  url "https://github.com/Kong/insomnia/releases/download/core%40#{version}/Insomnia.Core-#{version}.dmg"
   appcast 'https://api.insomnia.rest/changelog.json?app=com.insomnia.app'
   name 'Insomnia'
   homepage 'https://insomnia.rest/'

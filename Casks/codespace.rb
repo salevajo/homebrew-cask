@@ -1,9 +1,9 @@
 cask 'codespace' do
-  version '1.1.2'
-  sha256 '34a25da2b6034571a93ae278e41ccb4a94e6cf1c523567a4ba61dbba1e9ff001'
+  version '1.2.3'
+  sha256 'a6cce41cb3497bf455a867aba9d7a27cdf76f3999fa92409713701707dafab39'
 
   url 'https://codespace.app/download/latest'
-  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_filename.cgi?url=https://codespace.app/download/latest'
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_filename.cgi?url=https://codespace.app/download/latest&user_agent=Mac%20OS%20X'
   name 'Codespace'
   homepage 'https://codespace.app/'
 

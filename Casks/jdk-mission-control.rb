@@ -4,11 +4,11 @@ cask 'jdk-mission-control' do
 
   url "https://download.java.net/java/GA/jmc#{version.before_comma}/#{version.after_comma}/UPL/jmc-#{version.before_comma}+#{version.after_comma}_osx-x64_bin.tar.gz"
   appcast 'https://jdk.java.net/jmc/',
-          configuration: version.after_comma
+          must_contain: version.after_comma
   name 'JDK Mission Control'
   homepage 'https://jdk.java.net/jmc/'
 
-  app "jmc-#{version.major}+#{version.after_comma}_osx-x64_bin/JDK Mission Control.app"
+  app "jmc-#{version.before_comma}+#{version.after_comma}_osx-x64_bin/JDK Mission Control.app"
 
   caveats do
     depends_on_java '11'

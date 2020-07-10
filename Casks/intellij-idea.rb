@@ -1,6 +1,6 @@
 cask 'intellij-idea' do
-  version '2020.1.1'
-  sha256 '673796378ccf78ddd21ab8ebdffcda5651ef7401cf83336965f2c05af1565a3c'
+  version '2020.1.3'
+  sha256 'ae96f22aad30b2d2b73ffbfb907bc2f4b70d479cea48faff9c4afec2afb8da73'
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version}.dmg"
   appcast 'https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release'
