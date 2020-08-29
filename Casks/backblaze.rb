@@ -1,29 +1,30 @@
-cask 'backblaze' do
-  version '7.0.1.450'
-  sha256 'b1713930407b80513a41172db11c59dad68e8b8ee43d12863e0cdcd9b2caa5fd'
+cask "backblaze" do
+  version "7.0.2.464"
+  sha256 "1fed02eb7190c0ce052b6f1c0f5b33a7e89178cd1501a46cf99c2842109f9edf"
 
-  url 'https://secure.backblaze.com/mac/install_backblaze.dmg'
-  appcast 'https://secure.backblaze.com/api/clientversion.xml',
+  url "https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-#{version}.zip"
+  appcast "https://secure.backblaze.com/api/clientversion.xml",
           must_contain: "mac_version=\"#{version}\""
-  name 'Backblaze'
-  homepage 'https://backblaze.com/'
+  name "Backblaze"
+  desc "Data backup and storage service"
+  homepage "https://backblaze.com/"
 
-  installer manual: 'Backblaze Installer.app'
+  installer manual: "bzdoinstall.app"
 
   uninstall launchctl: [
-                         'com.backblaze.bzserv',
-                         'com.backblaze.bzbmenu',
-                       ],
+    "com.backblaze.bzserv",
+    "com.backblaze.bzbmenu",
+  ],
             delete:    [
-                         "#{appdir}/Backblaze.app",
-                         '/Library/PreferencePanes/BackblazeBackup.prefPane',
-                       ]
+              "#{appdir}/Backblaze.app",
+              "/Library/PreferencePanes/BackblazeBackup.prefPane",
+            ]
 
   zap trash: [
-               '/Library/Backblaze.bzpkg',
-               '~/Library/Preferences/com.backblaze.bzbmenu.plist',
-               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.backblaze.*.sfl*',
-               '/Library/Logs/DiagnosticReports/bzbmenu_*.*_resource.diag',
-               '~/Library/Logs/BackblazeGUIInstaller',
-             ]
+    "/Library/Backblaze.bzpkg",
+    "~/Library/Preferences/com.backblaze.bzbmenu.plist",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.backblaze.*.sfl*",
+    "/Library/Logs/DiagnosticReports/bzbmenu_*.*_resource.diag",
+    "~/Library/Logs/BackblazeGUIInstaller",
+  ]
 end

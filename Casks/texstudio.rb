@@ -1,21 +1,20 @@
-cask 'texstudio' do
-  version '2.12.22'
-  sha256 '1a509b7b58f5bf4d7a88cb0e36fb712bc52f7ca0c682346f37507002d5373220'
+cask "texstudio" do
+  version "3.0.0"
+  sha256 "f0a6e5427a61b3f2b8f0b01d04f8cb6cf2946958ab66cba6b38df9a380b2558a"
 
   # github.com/texstudio-org/texstudio/ was verified as official when first introduced to the cask
   url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx.dmg"
-  appcast 'https://github.com/texstudio-org/texstudio/releases.atom'
-  name 'TeXstudio'
-  homepage 'https://texstudio.org/'
+  appcast "https://github.com/texstudio-org/texstudio/releases.atom"
+  name "TeXstudio"
+  homepage "https://texstudio.org/"
 
-  conflicts_with cask: 'texstudio-beta'
-  depends_on macos: '>= :sierra'
+  depends_on macos: ">= :sierra"
 
-  app 'texstudio.app'
+  app "texstudio.app"
 
   zap trash: [
-               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/texstudio.sfl*',
-               '~/Library/Preferences/texstudio.plist',
-               '~/Library/Saved Application State/texstudio.savedState',
-             ]
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/texstudio.sfl*",
+    "~/Library/Preferences/texstudio.plist",
+    "~/Library/Saved Application State/texstudio.savedState",
+  ]
 end

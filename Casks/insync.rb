@@ -1,14 +1,13 @@
-cask 'insync' do
-  version '3.2.1.40839'
-  sha256 '10eb4351e37b1e8b0c87bd26313ca371595207acfad4932bfafb92e44dc15732'
+cask "insync" do
+  version "3.2.6.40863"
+  sha256 "c732aa4e3fc2bf58b051e3ce440f32ceeb2877681aa9c84ef1658fd3736ef2d6"
 
   url "http://s.insynchq.com/builds/Insync-#{version}.dmg"
-  appcast 'https://www.insynchq.com/downloads?start=true'
-  name 'Insync'
-  homepage 'https://www.insynchq.com/'
+  appcast "https://www.insynchq.com/downloads?start=true"
+  name "Insync"
+  homepage "https://www.insynchq.com/"
 
   auto_updates true
-  conflicts_with cask: 'insync-beta'
 
-  app 'Insync.app'
+  app "Insync.app"
 end
