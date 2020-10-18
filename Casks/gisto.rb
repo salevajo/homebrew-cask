@@ -1,11 +1,12 @@
 cask "gisto" do
-  version "1.13.2"
-  sha256 "1d314ba1f87202d29b25b2d11a2f832baaf8f0b378e24d6d09de8ef89aeaa308"
+  version "1.13.4"
+  sha256 "74043aa1f632ef86f5267610b5a9d6fcd2b35cc804aae654a67a4ee41f6a7e2f"
 
   # github.com/Gisto/Gisto/ was verified as official when first introduced to the cask
   url "https://github.com/Gisto/Gisto/releases/download/v#{version}/Gisto-#{version}.dmg"
   appcast "https://github.com/Gisto/Gisto/releases.atom"
   name "Gisto"
+  desc "Snippets management desktop application with (team) sharing options"
   homepage "https://www.gistoapp.com/"
 
   app "Gisto.app"

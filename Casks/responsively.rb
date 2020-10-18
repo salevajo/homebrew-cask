@@ -1,11 +1,12 @@
 cask "responsively" do
-  version "0.11.0"
-  sha256 "b295d2677de6ac47fef8f12c6aa5ae261e49237edc9e3b0d5711b36a82932b04"
+  version "0.14.1"
+  sha256 "056b98377f6711ea48c3cb39573e4b0875212ce458c332c813617b4434c4e470"
 
   # github.com/responsively-org/responsively-app/ was verified as official when first introduced to the cask
   url "https://github.com/responsively-org/responsively-app/releases/download/v#{version}/ResponsivelyApp-#{version}.dmg"
   appcast "https://github.com/responsively-org/responsively-app/releases.atom"
   name "Responsively"
+  desc "Modified browser that helps in responsive web development"
   homepage "https://responsively.app/"
 
   app "ResponsivelyApp.app"

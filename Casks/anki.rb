@@ -1,11 +1,12 @@
 cask "anki" do
-  version "2.1.32"
-  sha256 "1e3a87bb69fef7df157a56593820b86e390ca5d789f4cf87f37ca08f3a78bf9b"
+  version "2.1.35"
+  sha256 "53f526243e44c2a4ecc44c2f79ab49a7c2a8bc008a15164038d8509da2974477"
 
   # github.com/ankitects/anki/ was verified as official when first introduced to the cask
   url "https://github.com/ankitects/anki/releases/download/#{version}/anki-#{version}-mac.dmg"
-  appcast "https://changes.ankiweb.net/README.md"
+  appcast "https://github.com/ankitects/anki/releases.atom"
   name "Anki"
+  desc "Memory training application"
   homepage "https://apps.ankiweb.net/"
 
   depends_on macos: ">= :sierra"

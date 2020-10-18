@@ -1,11 +1,12 @@
 cask "youku" do
-  version "1.8.5.08252"
-  sha256 "9eac11903aae95e9f40bb82e27da76349f25215bbe6f7c0efb74588aa85be650"
+  version "1.8.7.10142"
+  sha256 "ae4c397dd9fe3e8089963a3c45e106eea78933cd2b80dc74c62b033877e3af89"
 
   url "https://pcclient.download.youku.com/ikumac/youkumac_#{version}.dmg"
   appcast "https://pd.youku.com/pc"
   name "Youku"
   name "优酷"
+  desc "Chinese video streaming and sharing platform"
   homepage "https://pd.youku.com/pc"
 
   app "优酷.app"

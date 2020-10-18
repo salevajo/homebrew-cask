@@ -1,10 +1,11 @@
 cask "josm" do
-  version "16812"
-  sha256 "59517854343dc606ea9924be657efc41c6b0f5b0486c855d13d300f81fe30a6e"
+  version "17084"
+  sha256 "e10ed32bb193fbf086359522828d33354f5d0e8d8d01435834ed4aa835c9a2ed"
 
   url "https://josm.openstreetmap.de/download/macosx/josm-macosx-#{version}.zip"
   appcast "https://josm.openstreetmap.de/"
   name "JOSM"
+  desc "Extensible editor for OpenStreetMap"
   homepage "https://josm.openstreetmap.de/"
 
   app "JOSM.app"

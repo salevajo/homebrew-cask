@@ -1,6 +1,6 @@
 cask "microsoft-office" do
-  version "16.40.20081000"
-  sha256 "ae510e5780059cc7ff1a2fc2a2e54d2ca7f5bf3ce74db98cbb403029211c2da6"
+  version "16.42.20101102"
+  sha256 "5fa1084bd240bf10faaf94d908492939807ead8e014582dcb2ade7ecc484276b"
 
   # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg"

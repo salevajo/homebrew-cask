@@ -1,11 +1,12 @@
 cask "zoomus" do
-  version "5.2.44040.0816"
-  sha256 "0508addbaa279f6ebe2faa28d30b8ca803e2778e191a10a9cef0f0b00aca6cfb"
+  version "5.3.53291.1011"
+  sha256 "a78bcaca78a1cdeab99886a046d26c37bb8580073ca7b54504b95f47a8b52054"
 
   # d11yldzmag5yn.cloudfront.net/ was verified as official when first introduced to the cask
   url "https://d11yldzmag5yn.cloudfront.net/prod/#{version}/Zoom.pkg"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://zoom.us/client/latest/Zoom.pkg"
   name "Zoom.us"
+  desc "Video communication and virtual meeting platform"
   homepage "https://www.zoom.us/"
 
   auto_updates true

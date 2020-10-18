@@ -1,10 +1,11 @@
 cask "quicken" do
-  version "5.17.5,517.34953.100"
-  sha256 "fdca78421fdaa10f0b48e928ac7c36724108ac35906e45fbfb5e95c70043adcf"
+  version "5.18.2,518.35919.100"
+  sha256 "a20265742bfabdcd5d96e820174a66a73871787b428e6d55ce70a10c0e4b9695"
 
   url "https://download.quicken.com/mac/Quicken/001/Release/031A96D9-EFE6-4520-8B6A-7F465DDAA3E4/Quicken-#{version.after_comma}/Quicken-#{version.after_comma}.zip"
   appcast "https://download.quicken.com/mac/Quicken/001/Release/031A96D9-EFE6-4520-8B6A-7F465DDAA3E4/appcast.xml"
   name "Quicken"
+  desc "Personal finance mananger"
   homepage "https://www.quicken.com/mac"
 
   depends_on macos: ">= :el_capitan"

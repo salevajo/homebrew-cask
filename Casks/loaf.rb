@@ -1,11 +1,12 @@
 cask "loaf" do
-  version "1.1.0"
-  sha256 "4499ace77b0500ebfd3199ea73e7a3fa6c2a14359056489f30dc67caf170c8ee"
+  version "1.1.3"
+  sha256 "a4ec3f781b6066ad021e55436ed39b6eff18379b9e885253be1eb8535532b80d"
 
   # github.com/philipardeljan/getloaf/ was verified as official when first introduced to the cask
   url "https://github.com/philipardeljan/getloaf/releases/download/v#{version}/loaf.dmg"
   appcast "https://github.com/philipardeljan/getmotion/releases.atom"
   name "Loaf"
+  desc "Animated icon library"
   homepage "https://www.getmotion.io/"
 
   app "Loaf.app"

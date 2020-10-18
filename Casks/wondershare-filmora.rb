@@ -1,6 +1,6 @@
 cask "wondershare-filmora" do
-  version "9.5.2.7"
-  sha256 "9ab5a7ab7172c47d4bcccf94b0cb7ca07d7a35cd2f58c3214b4ceeb34767e9ae"
+  version "9.6.1.16"
+  sha256 "045926971bf0f42b81d6d798d2328b2be49f9e30195ce168baf2c5491a5a075c"
 
   url "https://download.wondershare.com/filmora#{version.major}-mac_full718.dmg"
   name "Wondershare Filmora9"

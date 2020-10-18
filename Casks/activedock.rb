@@ -1,10 +1,12 @@
 cask "activedock" do
-  version "2.38,2038"
-  sha256 "2d7d5d3b151fc4c36b406fddeb16ed304adf44f6d8ceaabceaeec154f21d8a98"
+  version "2.56,2056"
+  sha256 "c8a5c5bdceec8f0623e02250d3557ca5367a1efe3204a2711249c66f1311bbd4"
 
-  url "https://noteifyapp.com/download/ActiveDock.dmg"
+  # macplus-software.com/ was verified as official when first introduced to the cask
+  url "https://macplus-software.com/downloads/ActiveDock.zip"
   appcast "https://macplus-software.com/downloads/ActiveDock.xml"
   name "ActiveDock"
+  desc "Customizable dock, application launcher, dock replacement"
   homepage "https://www.noteifyapp.com/activedock/"
 
   depends_on macos: ">= :high_sierra"

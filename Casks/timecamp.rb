@@ -1,6 +1,6 @@
 cask "timecamp" do
-  version "1.6.1.6"
-  sha256 "3d0805892011cdbf959f6fb37ab15a3be0940d354817e73b98b6bd7ad6314077"
+  version "1.6.2.2"
+  sha256 "8d02d1ab4c649bf6acb4e82aeb6b38b5bcb382dc436eca47e68b121ae56c4e4a"
 
   # timecamp.s3.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://timecamp.s3.amazonaws.com/downloadsoft/#{version}/TimeCampSetup_macOS.dmg"

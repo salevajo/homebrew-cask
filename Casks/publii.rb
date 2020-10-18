@@ -1,6 +1,6 @@
 cask "publii" do
-  version "0.36.1"
-  sha256 "53f6f09833069274aec7b8233e5babb2d9feec7b5a7ea2de80be593f668878a7"
+  version "0.37.1"
+  sha256 "1b3398cdaf15aefa2fd0f8db47d3aaf61a1e2037b7d7994ed95a43a3d680689f"
 
   url "https://cdn.getpublii.com/Publii-#{version}.dmg"
   appcast "https://getpublii.com/download/"

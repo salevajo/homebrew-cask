@@ -1,6 +1,6 @@
 cask "yate" do
-  version "6.0.1.1"
-  sha256 "a585d1f237487009bac075b6c39d6fa983efd8edb61ceb120117499055aca39d"
+  version "6.0.2.1"
+  sha256 "617c9356784d21f2bc1c8d3b42cba05494abdd56122367302f316cd8a459977e"
 
   url "https://2manyrobots.com/Updates/Yate/Yate.zip"
   appcast "https://2manyrobots.com/Updates/Yate/appcast.xml"

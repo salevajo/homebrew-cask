@@ -1,10 +1,11 @@
 cask "imazing" do
-  version "2.12.0.13794"
-  sha256 "5a71a9acf95194023cf3e35fe429c05d0c42199ff1268da4d1718e7c515af619"
+  version "2.12.4.13847"
+  sha256 "dd4239d557de77873a6ec3a35cacc345feaa1ee2d3c6bf2aa288d6c0bc8a2cb1"
 
   url "https://downloads.imazing.com/mac/iMazing/#{version}/iMazing_#{version}.dmg"
   appcast "https://downloads.imazing.com/com.DigiDNA.iMazing#{version.major}Mac.xml"
   name "iMazing"
+  desc "iPhone management application"
   homepage "https://imazing.com/"
 
   auto_updates true

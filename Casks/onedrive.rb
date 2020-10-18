@@ -4,8 +4,9 @@ cask "onedrive" do
 
   # oneclient.sfx.ms/Mac/Direct/ was verified as official when first introduced to the cask
   url "https://oneclient.sfx.ms/Mac/Direct/#{version}/OneDrive.pkg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?LinkId=861011"
+  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.microsoft.com/fwlink/?linkid=823060"
   name "OneDrive"
+  desc "Cloud storage client"
   homepage "https://onedrive.live.com/"
 
   auto_updates true

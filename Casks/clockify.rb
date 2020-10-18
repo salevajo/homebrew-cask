@@ -1,11 +1,12 @@
 cask "clockify" do
-  version "2.5.0"
-  sha256 "c2145791a92785b0daa47d29cb2d5bffd5df3e31a19a1a2e17c227c1ad7858aa"
+  version "2.5.6"
+  sha256 "4b47a46231819f805a9fd6124c343f6a5e5887769cb1ce6c5c949b142e375687"
 
   # clockify-resources.s3.eu-central-1.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://clockify-resources.s3.eu-central-1.amazonaws.com/downloads/ClockifyDesktop.zip"
   appcast "https://clockify-resources.s3.eu-central-1.amazonaws.com/downloads/appcast.xml"
   name "Clockify"
+  desc "Time tracking tool for agencies and freelancers"
   homepage "https://clockify.me/mac-time-tracking"
 
   auto_updates true

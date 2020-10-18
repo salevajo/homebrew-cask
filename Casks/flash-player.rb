@@ -1,11 +1,11 @@
 cask "flash-player" do
-  version "32.0.0.414"
-  sha256 "8d7a8f8902f4262445ee55e58512487b196a061addfaafc3f9b08d77fb6e667c"
+  version "32.0.0.445"
+  sha256 "4b5ae8707a2d9c00a88fc2328f56d30c21a83c354d96f8050628b052e565ab84"
 
   url "https://fpdownload.adobe.com/pub/flashplayer/updaters/#{version.major}/flashplayer_#{version.major}_sa.dmg"
-  appcast "https://fpdownload.adobe.com/pub/flashplayer/update/current/xml/version_en_mac_pl.xml",
-          must_contain: version.tr(".", ",")
+  appcast "https://www.adobe.com/support/flashplayer/debug_downloads.html"
   name "Adobe Flash Player projector"
+  desc "Adobe Flash player"
   homepage "https://www.adobe.com/support/flashplayer/debug_downloads.html"
 
   app "Flash Player.app"

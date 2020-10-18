@@ -1,11 +1,14 @@
 cask "electrum" do
-  version "4.0.2"
-  sha256 "dfbdda1b09ea7b7ad39657a4930fd9b90957fb108970900cd978feafcfa82d10"
+  version "4.0.4"
+  sha256 "39f09e721aecec9b324ce1daf4ec5dd5b2403acce552c178bcbe61dc7503e006"
 
   url "https://download.electrum.org/#{version}/electrum-#{version}.dmg"
   appcast "https://github.com/spesmilo/electrum/releases.atom"
   name "Electrum"
+  desc "Bitcoin thin client"
   homepage "https://electrum.org/"
+
+  depends_on macos: ">= :high_sierra"
 
   app "Electrum.app"
 

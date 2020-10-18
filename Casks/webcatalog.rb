@@ -1,12 +1,13 @@
 cask "webcatalog" do
-  version "24.1.0"
-  sha256 "3d00b18988f497c4289d0a7aa7c33937cdb38a6f6ca3b031032e1126a9bd42a8"
+  version "25.6.0"
+  sha256 "63b4204efae487dec6def45c4b9a466c4610a4a02e8a995add281debf05668d8"
 
-  # github.com/quanglam2807/webcatalog/ was verified as official when first introduced to the cask
-  url "https://github.com/quanglam2807/webcatalog/releases/download/v#{version}/WebCatalog-#{version}-mac.zip"
-  appcast "https://github.com/quanglam2807/webcatalog/releases.atom"
+  # github.com/webcatalog/webcatalog-app/ was verified as official when first introduced to the cask
+  url "https://github.com/webcatalog/webcatalog-app/releases/download/v#{version}/WebCatalog-#{version}.dmg"
+  appcast "https://github.com/webcatalog/webcatalog-app/releases.atom"
   name "WebCatalog"
-  homepage "https://getwebcatalog.com/"
+  desc "Tool to run web apps like desktop apps"
+  homepage "https://webcatalog.app/"
 
   auto_updates true
 

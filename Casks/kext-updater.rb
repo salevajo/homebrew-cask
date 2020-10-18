@@ -1,10 +1,11 @@
 cask "kext-updater" do
-  version "3.5.7"
-  sha256 "31600dbfb445ae3fc0846369c9adc357120e41fc6f4bb578ab7342ee0111aa81"
+  version "3.6.5"
+  sha256 "e723ba7fea0b2c19f9d5d27841056dbd13edaba734bc5c407084e4c82105863b"
 
   url "https://update.kextupdater.de/kextupdater/kextupdaterng.zip"
   appcast "https://update.kextupdater.de/kextupdater/appcastng.xml"
   name "Kext Updater"
+  desc "Automatic updater for kernel extensions required by 'Hackintoshes'"
   homepage "https://kextupdater.de/"
 
   app "Kext Updater.app"

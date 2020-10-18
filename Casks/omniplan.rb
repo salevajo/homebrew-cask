@@ -5,14 +5,15 @@ cask "omniplan" do
 
     url "https://downloads.omnigroup.com/software/MacOSX/10.13/OmniPlan-#{version}.dmg"
   else
-    version "4.0.2"
-    sha256 "a7e2abcd825787d4e897280a91837a134c957578b7f4e5cc7cc5f57c31b95fc3"
+    version "4.1"
+    sha256 "8b35c3b2e42c93daa647df31f15ce59b9a18e1c36850d1c351752e192e095b8b"
 
     url "https://downloads.omnigroup.com/software/MacOSX/10.14/OmniPlan-#{version}.dmg"
   end
 
   appcast "https://update.omnigroup.com/appcast/com.omnigroup.OmniPlan#{version.major}"
   name "OmniPlan"
+  desc "Project planning and management software"
   homepage "https://www.omnigroup.com/omniplan/"
 
   auto_updates true

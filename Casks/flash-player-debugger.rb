@@ -1,11 +1,11 @@
 cask "flash-player-debugger" do
-  version "32.0.0.414"
-  sha256 "7d66c08635bebdb0b1884e7a0166678055aba839c626348401451b924deb7657"
+  version "32.0.0.445"
+  sha256 "88a09191da28c841f84d33c504aa6b9ddd7ba25417200750ae0249cf52b3f260"
 
   url "https://fpdownload.adobe.com/pub/flashplayer/updaters/#{version.major}/flashplayer_#{version.major}_sa_debug.dmg"
-  appcast "https://fpdownload.adobe.com/pub/flashplayer/update/current/xml/version_en_mac_pep.xml",
-          must_contain: version.tr(".", ",")
+  appcast "https://www.adobe.com/support/flashplayer/debug_downloads.html"
   name "Adobe Flash Player projector content debugger"
+  desc "Debugger for Adobe Flash player"
   homepage "https://www.adobe.com/support/flashplayer/debug_downloads.html"
 
   # Renamed to avoid conflict with flash-player.

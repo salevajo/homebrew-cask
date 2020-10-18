@@ -1,15 +1,16 @@
 cask "slack" do
-  version "4.8.0"
-  sha256 "428ec2b5a9d5eb3b408c1cafa3977daeff0391c7d71656773c6ce535d8e0424c"
+  version "4.10.3"
+  sha256 "6ba18d92033a7557fd95de68a981646d97d6d623904016abea0398bc4fa1e764"
 
   # downloads.slack-edge.com/ was verified as official when first introduced to the cask
   url "https://downloads.slack-edge.com/releases/macos/#{version}/prod/x64/Slack-#{version}-macOS.dmg"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://slack.com/ssb/download-osx"
   name "Slack"
+  desc "Team communication and collaboration software"
   homepage "https://slack.com/"
 
   auto_updates true
-  conflicts_with cask: "slack-beta"
+  conflicts_with cask: "homebrew/cask-versions/slack-beta"
 
   app "Slack.app"
 

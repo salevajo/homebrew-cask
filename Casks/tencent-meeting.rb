@@ -1,11 +1,12 @@
 cask "tencent-meeting" do
-  version "1.8.0.475"
-  sha256 "a2672a90559b9f5484532335ef72545c0860f3d773bd39a4702c8fd158f87e42"
+  version "2.0.0.434,90f6eff0c7f3f5638599225c41ddba6b"
+  sha256 "86b17c09e1dd951fc4f5b75d653fffda140f4921428906d9c246c15a58b832e2"
 
   # qq.com was verified as official when first introduced to the cask
-  url "https://down.qq.com/download/TencentMeeting_0300000000_#{version}.publish.dmg"
+  url "https://updatecdn.meeting.qq.com/#{version.after_comma}/TencentMeeting_0300000000_#{version.before_comma}.publish.dmg"
   name "Tencent Meeting"
   name "腾讯会议"
+  desc "Cloud video conferencing"
   homepage "https://meeting.tencent.com/"
 
   auto_updates true

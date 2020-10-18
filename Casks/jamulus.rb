@@ -1,11 +1,12 @@
 cask "jamulus" do
-  version "3.5.10"
-  sha256 "4f891976d3499f4511752c625b48e05751d561aaca7bed1601240560e81de1c8"
+  version "3.5.12"
+  sha256 "833e022e4fe829a4ec844078ce31236876ce4b1694d13d99a201d55476077949"
 
+  # downloads.sourceforge.net/llcon/ was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/llcon/Jamulus-#{version}-installer-mac.dmg"
   appcast "https://sourceforge.net/projects/llcon/rss"
   name "Jamulus"
-  homepage "http://llcon.sourceforge.net/"
+  homepage "https://llcon.sourceforge.io/"
 
   auto_updates true
 

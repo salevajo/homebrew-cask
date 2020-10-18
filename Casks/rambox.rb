@@ -1,11 +1,12 @@
 cask "rambox" do
-  version "0.7.5"
-  sha256 "3977a7b9929969624663390296fc644a72d107852ce1b7c786e3f84f4412057a"
+  version "0.7.7"
+  sha256 "b73accdc18e20b285dbf280d9db539cfdd8ccffa0ab4ccddc26bd596ab56a8df"
 
   # github.com/ramboxapp/community-edition/ was verified as official when first introduced to the cask
   url "https://github.com/ramboxapp/community-edition/releases/download/#{version}/Rambox-#{version}-mac.zip"
   appcast "https://github.com/ramboxapp/community-edition/releases.atom"
   name "Rambox"
+  desc "Free and Open Source messaging and emailing app"
   homepage "https://rambox.pro/"
 
   app "Rambox.app"

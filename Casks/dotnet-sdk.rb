@@ -3,8 +3,8 @@ cask "dotnet-sdk" do
     version "2.2.402,7430e32b-092b-4448-add7-2dcf40a7016d:1076952734fbf775062b48344d1a1587"
     sha256 "e74d816bc034d0fcdfa847286a6cad097227d4864da1c97fe801012af0c26341"
   else
-    version "3.1.401,692921be-5cd6-42b5-8c52-0c17cb5ec580:1b0d95cd4950a58ac069095bdf976f6e"
-    sha256 "34361a0370fe4da5ce2e853e18d74f09612bb7de879a5e491e724cf9fc51edef"
+    version "3.1.403,b4db3ee6-91da-4dd3-a279-37c45d9627b7:fad88a7335d374d6e4d53aef085f4b24"
+    sha256 "6b4f384b8a724bab114e0685285a98003ed21227acfb3c6ff0dc083d981812fc"
   end
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"

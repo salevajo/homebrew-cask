@@ -1,9 +1,10 @@
 cask "snagit" do
-  version "2020.2.0"
+  version "2020.2.1"
   sha256 :no_check # required as upstream package is updated in-place
 
   url "https://download.techsmith.com/snagitmac/releases/Snagit.dmg"
   name "Snagit"
+  desc "Screen capture software"
   homepage "https://www.techsmith.com/screen-capture.html"
 
   depends_on macos: ">= :sierra"

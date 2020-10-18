@@ -1,10 +1,11 @@
 cask "sketch" do
-  version "68.1-102560"
-  sha256 "db6fda97637608d426b261c9e25501ea22f81c7c93c5cf2dc5d3d43ac9019f3a"
+  version "69-107357"
+  sha256 "6eb4dc7a1d64ffceab3a7edf1bc23e843264c1824d73cdfd5d07d012faaeab53"
 
   url "https://download.sketchapp.com/sketch-#{version}.zip"
   appcast "https://download.sketchapp.com/sketch-versions.xml"
   name "Sketch"
+  desc "Digital design and prototyping platform"
   homepage "https://www.sketchapp.com/"
 
   auto_updates true

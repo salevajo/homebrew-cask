@@ -1,8 +1,9 @@
 cask "qt-design-studio" do
-  version "1.5.0"
-  sha256 "db05cafe77ea8db26505ec4100334362e196ec5835172d7db184b3988ce2df5e"
+  version "1.6.1"
+  sha256 "3211b7c7147807ba08e3a57a38c1bca7f8038921e861a51d9f92110bae7f408c"
 
   url "https://download.qt.io/official_releases/qtdesignstudio/#{version}/qt-designstudio-mac-x86_64-#{version}-community.dmg"
+  appcast "https://download.qt.io/official_releases/qtdesignstudio/"
   name "Qt Design Studio"
   homepage "https://www.qt.io/ui-framework"
 

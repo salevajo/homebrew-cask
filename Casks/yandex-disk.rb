@@ -1,9 +1,10 @@
 cask "yandex-disk" do
-  version "3.1.20,30"
-  sha256 "2a91be3187b8d245e9a936a1098a4bb9e83085031fe03054da91447032ad9ff0"
+  version "3.2.0,30"
+  sha256 "cc849b7b2f4b6b2cbb346344bd740b9fd488d6eeb34c5393c35d4ffd5cc6f869"
 
   url "https://disk.yandex.ru/download/YandexDisk#{version.after_comma}.dmg/?instant=1"
   name "Yandex.Disk"
+  desc "Cloud storage"
   homepage "https://disk.yandex.ru/"
 
   auto_updates true

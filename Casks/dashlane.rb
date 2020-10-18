@@ -1,11 +1,12 @@
 cask "dashlane" do
-  version "6.2033.0.38023"
-  sha256 "1bee74b348c501032b6aa6a030c3c613b136e0c70f8e460e58cd2c0115402ec4"
+  version "6.2039.0.39656"
+  sha256 "cfb10ece711650847a2efb631cd3d54ba292f6a0a8ed99a3611cb8d2829c8098"
 
   # d3mfqat9ni8wb5.cloudfront.net/releases/ was verified as official when first introduced to the cask
   url "https://d3mfqat9ni8wb5.cloudfront.net/releases/#{version.major_minor_patch}/#{version}/release/Dashlane.dmg"
   appcast "https://ws1.dashlane.com/5/binaries/query?format=json&os=OS_X_10_14_5&target=archive&platform=launcher_macosx"
   name "Dashlane"
+  desc "Password manager and digital wallet application"
   homepage "https://www.dashlane.com/"
 
   auto_updates true

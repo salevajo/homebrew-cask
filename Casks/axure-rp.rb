@@ -1,11 +1,12 @@
 cask "axure-rp" do
-  version "9.0.0.3714"
-  sha256 "e298e722dc60cdb0dda1eeb2f75b2df179c8ee45733518080d0ac890447f2d7c"
+  version "9.0.0.3719"
+  sha256 "1284fb82679f154d639f2c05900b526e3270a3aacb58348cd27bb0b659cf503e"
 
   # axure.cachefly.net/ was verified as official when first introduced to the cask
   url "https://axure.cachefly.net/AxureRP-Setup.dmg"
   appcast "https://www.axure.com/release-history"
   name "Axure RP"
+  desc "Planning and prototyping tool for developers"
   homepage "https://www.axure.com/"
 
   app "Axure RP #{version.major}.app"

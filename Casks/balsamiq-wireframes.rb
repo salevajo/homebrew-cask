@@ -1,10 +1,11 @@
 cask "balsamiq-wireframes" do
-  version "4.1.2"
-  sha256 "57ef07080f12d25ef9eb65a43c1b0e6ec3030f7a97a7a45934db272a60df9ab7"
+  version "4.1.5"
+  sha256 "698cdec344def8c45120088f3811b32910827f66fd4bf4f8a30c9a5f5e675adf"
 
   url "https://builds.balsamiq.com/bwd/Balsamiq%20Wireframes%20#{version}.dmg"
   appcast "https://builds.balsamiq.com/bwd/mac.jsonp"
   name "Balsamiq Wireframes"
+  desc "UI wireframing tool"
   homepage "https://balsamiq.com/"
 
   app "Balsamiq Wireframes.app"

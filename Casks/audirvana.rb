@@ -1,10 +1,11 @@
 cask "audirvana" do
-  version "3.5.39"
-  sha256 "a5209ca46da696e4617e5eec2ddfb7199ddfbcdd851131f8a908bcf929660cbd"
+  version "3.5.41"
+  sha256 "d4b9b016aa6d30c05b71dcd753535fdb506eab6b769a664ffb9490e77534feac"
 
   url "https://audirvana.com/delivery/Audirvana_#{version}.dmg"
   appcast "https://audirvana.com/delivery/audirvana#{version.major}_#{version.minor}_appcast.xml"
   name "Audirvana"
+  desc "Audio playback software"
   homepage "https://audirvana.com/"
 
   auto_updates true

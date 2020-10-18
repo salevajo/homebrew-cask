@@ -1,11 +1,12 @@
 cask "sidequest" do
-  version "0.10.11"
-  sha256 "2399041835559111ad81a588f4aa8458e348d86bd1e103ebb8c6046ccf656a0e"
+  version "0.10.16"
+  sha256 "8c8923c8f118990e7283999b37e5199219076cad68acceb4549bc38474ccf5c7"
 
-  # github.com/the-expanse/SideQuest/ was verified as official when first introduced to the cask
-  url "https://github.com/the-expanse/SideQuest/releases/download/v#{version}/SideQuest-#{version}.dmg"
-  appcast "https://github.com/the-expanse/SideQuest/releases.atom"
+  # github.com/SideQuestVR/SideQuest/ was verified as official when first introduced to the cask
+  url "https://github.com/SideQuestVR/SideQuest/releases/download/v#{version}/SideQuest-#{version}.dmg"
+  appcast "https://github.com/SideQuestVR/SideQuest/releases.atom"
   name "SideQuest"
+  desc "Virtual reality content platform"
   homepage "https://sidequestvr.com/"
 
   depends_on macos: ">= :sierra"

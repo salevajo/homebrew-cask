@@ -1,11 +1,12 @@
 cask "ubersicht" do
-  version "1.4.61"
-  sha256 "0e5090b99d48eb6c4b3dbcea67c32018079285015996ff2bb4cc68d383b7d019"
+  version "1.5.64"
+  sha256 "0165441748b683582568cd2469441e8e4f70dc0df64cda5c72ea88f10047100c"
 
-  url "http://tracesof.net/uebersicht/releases/Uebersicht-#{version}.app.zip"
-  appcast "http://tracesof.net/uebersicht/updates.xml.rss"
+  url "https://tracesof.net/uebersicht/releases/Uebersicht-#{version}.app.zip"
+  appcast "https://tracesof.net/uebersicht/updates.xml.rss"
   name "Übersicht"
-  homepage "http://tracesof.net/uebersicht/"
+  desc "Run commands and display their output on the desktop"
+  homepage "https://tracesof.net/uebersicht/"
 
   auto_updates true
   depends_on macos: ">= :yosemite"

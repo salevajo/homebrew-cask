@@ -1,11 +1,12 @@
 cask "icollections" do
-  version "6.5.4,65403"
-  sha256 "1adccabd8c1e92d2b0c82ed1c7b08c3c77a7f2e136592b85d4d0862bc6bfb92f"
+  version "6.6,66012"
+  sha256 "f386cc0326970da0e4ab488169abbca5709f49e47b6571d9037cb35c7053293b"
 
   url "https://naarakstudio.com/download/iCollections.dmg"
   appcast "https://naarakstudio.com/download/icollections/update.ver",
           must_contain: version.after_comma
   name "iCollections"
+  desc "App to help keep the desktop organized"
   homepage "https://naarakstudio.com/icollections/"
 
   depends_on macos: ">= :sierra"
