@@ -1,9 +1,9 @@
 cask "keyboard-maestro" do
-  version "9.0.6"
-  sha256 "37025041a112a567cb215d4cc9748986f5a6569defb8ec412f3bae607dd337b6"
+  version "9.2"
+  sha256 "a3a25d0663074e726e4d89692196f2e4a5b7ae013b5f3ed9eb1aae784d457c5d"
 
-  # stairways.com/ was verified as official when first introduced to the cask
-  url "https://files.stairways.com/keyboardmaestro-#{version.no_dots}.zip"
+  url "https://files.stairways.com/keyboardmaestro-#{version.no_dots}.zip",
+      verified: "stairways.com/"
   appcast "https://www.keyboardmaestro.com/action/sivc?M&U&08248000&6ABF5EF7&xxxxxxxx&00000000&000010E0&KM&EN"
   name "Keyboard Maestro"
   homepage "https://www.keyboardmaestro.com/main/"

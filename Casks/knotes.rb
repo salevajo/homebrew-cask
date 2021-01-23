@@ -1,12 +1,17 @@
 cask "knotes" do
-  version "2.6.0"
-  sha256 "5946b48b0e6ac588331336f760711c11c53ef9b0030616f39db6e9a41551d434"
+  version "2.7.1"
+  sha256 "4ee5dbbfdfb6ef4f57444add10823add5c81140617d90a4603f322c953378410"
 
-  # knotes2.s3-ap-northeast-1.amazonaws.com/ was verified as official when first introduced to the cask
-  url "https://knotes2.s3-ap-northeast-1.amazonaws.com/download/mac/Knotes-#{version}.dmg"
-  appcast "https://knotesapp.com/"
+  url "https://knotes2.s3-ap-northeast-1.amazonaws.com/download/mac/Knotes-#{version}.dmg",
+      verified: "knotes2.s3-ap-northeast-1.amazonaws.com/"
   name "Knotes"
   homepage "https://knotesapp.com/"
+
+  livecheck do
+    url "https://knotesapp.com/"
+    strategy :page_match
+    regex(%r{href=.*?/Knotes-(\d+(?:\.\d+)*)\.dmg}i)
+  end
 
   app "Knotes.app"
 

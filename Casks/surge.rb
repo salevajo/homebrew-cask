@@ -1,10 +1,11 @@
 cask "surge" do
-  version "3.5.7-1129"
-  sha256 "eaeb7faad3f0cc9d2a6d29f33e5cad51a784a3efae4157de2341b3c724ac663d"
+  version "4.0.2-1219-dbd08724b90aa8b444cd6d0679a245b5"
+  sha256 "69684685b0fa68fd6bfc17321bac41d77c1a65ea1bac1175894a03fc40b41635"
 
   url "https://www.nssurge.com/mac/v#{version.major}/Surge-#{version}.zip"
   appcast "https://www.nssurge.com/mac/v#{version.major}/appcast-signed.xml"
   name "Surge"
+  desc "Network toolbox"
   homepage "https://nssurge.com/"
 
   auto_updates true

@@ -1,9 +1,9 @@
 cask "lark" do
-  version "3.32.3,efd06a"
-  sha256 "af58786c346a724b289a0693fb177fc859d5f859d5322246ffe3c0ad807de5b8"
+  version "3.39.2,b72743"
+  sha256 "68604ac99d570287dcfd12fa713fe983692b2fd15ee2d8feb9725105816d7e65"
 
-  # sf3-ttcdn-tos.pstatp.com/ was verified as official when first introduced to the cask
-  url "https://sf3-ttcdn-tos.pstatp.com/obj/ee-appcenter/#{version.after_comma}/Lark-#{version.before_comma}.dmg"
+  url "https://sf16-va.larksuitecdn.com/obj/lark-artifact-storage/#{version.after_comma}/Lark-#{version.before_comma}.dmg",
+      verified: "sf16-va.larksuitecdn.com/obj/lark-artifact-storage/"
   appcast "https://www.larksuite.com/api/downloads"
   name "Lark"
   desc "Project management software"

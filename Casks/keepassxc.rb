@@ -1,14 +1,20 @@
 cask "keepassxc" do
-  version "2.6.1"
-  sha256 "ac0a74369f4009a6d5922840c3df8fe4641c11af8643cc60b9ba6103ff1eceda"
+  version "2.6.3"
+  sha256 "3b2e86aafa6943771f008ec530d0809b12f1a09773838f8e0e79ed71061a3c36"
 
-  # github.com/keepassxreboot/keepassxc/ was verified as official when first introduced to the cask
-  url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg"
-  appcast "https://github.com/keepassxreboot/keepassxc/releases.atom"
+  url "https://github.com/keepassxreboot/keepassxc/releases/download/#{version}/KeePassXC-#{version}.dmg",
+      verified: "github.com/keepassxreboot/keepassxc/"
   name "KeePassXC"
   desc "Password manager app"
   homepage "https://keepassxc.org/"
 
+  livecheck do
+    url "https://github.com/keepassxreboot/keepassxc/releases/latest"
+    strategy :page_match
+    regex(%r{href=.*?/KeePassXC-(\d+(?:\.\d+)*)\.dmg}i)
+  end
+
+  conflicts_with cask: "homebrew/cask-versions/keepassxc-beta"
   depends_on macos: ">= :high_sierra"
 
   app "KeePassXC.app"

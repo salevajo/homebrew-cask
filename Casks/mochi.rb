@@ -1,11 +1,16 @@
 cask "mochi" do
-  version "1.6.11"
-  sha256 "c8fb5aacaf58dc2774bb0b40a88ee354ae3b2a0bf762089dddd1ae529ac7f854"
+  version "1.8.1"
+  sha256 "191c77b8263eaf68a0c4eb720d1c32aabfe21aee4961e5f1807b9f9de0c9ef3c"
 
   url "https://mochi.cards/releases/Mochi-#{version}.dmg"
-  appcast "https://mochi.cards/"
   name "Mochi"
   homepage "https://mochi.cards/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(%r{href=.*?/Mochi-(\d+(?:\.\d+)*)\.dmg}i)
+  end
 
   app "Mochi.app"
 end

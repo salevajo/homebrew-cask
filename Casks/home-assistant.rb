@@ -1,9 +1,9 @@
 cask "home-assistant" do
-  version "2020.7,6"
-  sha256 "1611b0ca3a0d334b16309478aba16a254df9e821036adcf06efd2f186da94dca"
+  version "2021.1,6"
+  sha256 "11de588ac58c33a76abe31e71a9f11b67c7f3c269a836979ee006292196ec9ad"
 
-  # github.com/home-assistant/iOS/ was verified as official when first introduced to the cask
-  url "https://github.com/home-assistant/iOS/releases/download/release%2F#{version.before_comma}%2F#{version.after_comma}/home-assistant-mac.zip"
+  url "https://github.com/home-assistant/iOS/releases/download/release%2F#{version.before_comma}%2F#{version.after_comma}/home-assistant-mac.zip",
+      verified: "github.com/home-assistant/iOS/"
   appcast "https://github.com/home-assistant/iOS/releases.atom"
   name "Home Assistant"
   desc "Companion app for Home Assistant home automation software"

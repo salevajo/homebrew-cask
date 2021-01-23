@@ -1,11 +1,11 @@
 cask "opera" do
-  version "71.0.3770.271"
-  sha256 "6d94b1ad056f4e569f728954faee9f5c4a2ff11558519903c2db0e0717f4db7d"
+  version "73.0.3856.344"
+  sha256 "b377c7ba5530e2cadbb107b8f777d6d3e188b003f85ef427992cf8513480c8ff"
 
   url "https://get.geo.opera.com/pub/opera/desktop/#{version}/mac/Opera_#{version}_Setup.dmg"
   appcast "https://ftp.opera.com/pub/opera/desktop/"
   name "Opera"
-  desc "Cross-platform web browser"
+  desc "Web browser"
   homepage "https://www.opera.com/"
 
   auto_updates true

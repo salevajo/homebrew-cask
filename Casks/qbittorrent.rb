@@ -1,9 +1,9 @@
 cask "qbittorrent" do
-  version "4.2.5"
-  sha256 "52f86aa8f0e3f5c15013d40ff7789861dc6afdce077dfa461ccff2a56ff0d8f7"
+  version "4.3.3"
+  sha256 "0ac246975e494768dc327bd99706c23503cc4e219e311901c58d65d5506510f3"
 
-  # sourceforge.net/qbittorrent/ was verified as official when first introduced to the cask
-  url "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-#{version}/qbittorrent-#{version}.dmg"
+  url "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-#{version}/qbittorrent-#{version}.dmg",
+      verified: "sourceforge.net/qbittorrent/"
   appcast "https://sourceforge.net/projects/qbittorrent/rss?path=/qbittorrent-mac"
   name "qBittorrent"
   desc "Peer to peer Bitorrent client"

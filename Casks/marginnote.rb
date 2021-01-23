@@ -1,13 +1,17 @@
 cask "marginnote" do
-  version "3.6.15"
-  sha256 "39d93696555f95864807a9f40838f4ef3d617851f89578b5ebc4db57cee10749"
+  version "3.7.1,3.7.1102"
+  sha256 "705ae4fe59120e0f015246fc98b2f1ca352ec71e21df7361f6447f4a6d1bc1fd"
 
-  # marginstudy.com/ was verified as official when first introduced to the cask
-  url "https://marginstudy.com/mac/MarginNote#{version.major}.dmg"
-  appcast "https://dist.marginnote.cn/marginnote#{version.major}.xml"
+  url "https://marginstudy.com/mac/MarginNote#{version.major}.dmg",
+      verified: "marginstudy.com/"
   name "MarginNote"
   desc "E-reader"
   homepage "https://www.marginnote.com/"
+
+  livecheck do
+    url "https://dist.marginnote.cn/marginnote#{version.major}.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
 

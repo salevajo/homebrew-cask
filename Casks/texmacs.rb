@@ -1,11 +1,16 @@
 cask "texmacs" do
-  version "1.99.13"
-  sha256 "4d9e3df9fb5713ddca84dd07e6bda606a7ac4576f7120ea80f6c89a7b8dc4545"
+  version "1.99.18"
+  sha256 "8e1bd0470fa6ea824cf077df1d08567f1fe05a207c94b00fac3bbbafeacf0403"
 
-  url "https://www.texmacs.org/Download/ftp/tmftp/macos/TeXmacs-#{version}.dmg"
-  appcast "https://www.texmacs.org/tmweb/download/macosx.en.html"
+  url "https://ftp.texmacs.org/TeXmacs/tmftp/macos/TeXmacs-#{version}.dmg"
   name "GNU TeXmacs"
+  desc "Scientific editing platform"
   homepage "https://www.texmacs.org/"
+
+  livecheck do
+    url "http://ftp.texmacs.org/TeXmacs/appcast/macos.xml"
+    strategy :sparkle
+  end
 
   app "TeXmacs.app"
 

@@ -1,11 +1,15 @@
 cask "prepros" do
-  version "7.3.26"
-  sha256 "88e768112eacc410a9330eb11ff135cc52b3b53dceca1e8c8a2c9695362e89da"
+  version "7.3.30"
+  sha256 "bc5f2f9386566e56b50350750d30a07267afc37a2189fc3ff2a1207f626fc473"
 
   url "https://downloads.prepros.io/v#{version.major}/Prepros-#{version}.zip"
-  appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://prepros.io/downloads/stable/mac"
   name "Prepros"
   homepage "https://prepros.io/"
+
+  livecheck do
+    url "https://prepros.io/downloads/stable/mac"
+    strategy :header_match
+  end
 
   app "Prepros.app"
 end

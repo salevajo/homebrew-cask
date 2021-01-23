@@ -1,12 +1,17 @@
 cask "sitebulb" do
-  version "4.3.0"
-  sha256 "86e52aa57caca7fd38864db420c7def8cac5a5abd812ffee9b020cf668795ec9"
+  version "4.6.2"
+  sha256 "a66dd8116b526e369eaa1efaefc43a81795a4e7094f65b6ab035811efe43b83a"
 
-  url "https://downloads.sitebulb.com/#{version.major}/macOS/Sitebulb.dmg"
-  appcast "https://sitebulb.com/download/",
-          must_contain: version.major_minor
+  url "https://downloads.sitebulb.com/#{version}/macOS/Sitebulb.dmg"
   name "Sitebulb"
+  desc "Website auditing tool"
   homepage "https://sitebulb.com/"
+
+  livecheck do
+    url "https://sitebulb.com/download/"
+    strategy :page_match
+    regex(%r{href=.*?/(\d+(?:\.\d+)*)/macOS/Sitebulb\.dmg}i)
+  end
 
   app "Sitebulb.app"
 end

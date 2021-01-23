@@ -1,6 +1,6 @@
 cask "clash-for-windows" do
-  version "0.12.1"
-  sha256 "c664e60d2ef6bad50b0619ed864b32ce35ee2fdc316eb804c10f9bbf85f4ab7d"
+  version "0.14.1"
+  sha256 "6eff47f82616f897e216e7f2b737c3181013f6726e4062b2395e367e4968dcb4"
 
   url "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/#{version}/Clash.for.Windows-#{version}.dmg"
   appcast "https://github.com/Fndroid/clash_for_windows_pkg/releases.atom"

@@ -1,23 +1,30 @@
 cask "kotlin-native" do
-  version "1.4.0"
-  sha256 "476f920631b0ccb4b8e25456ef49356fb33d6e3960e9f2ec8def0aaa23284168"
+  version "1.4.21"
+  sha256 "f3a65ea070cbfca89497a14340f1530d1ec37875efc8be9a972b6a7aefde29c0"
 
-  # github.com/JetBrains/kotlin/ was verified as official when first introduced to the cask
-  url "https://github.com/JetBrains/kotlin/releases/download/v#{version}/kotlin-native-macos-#{version.major_minor}.tar.gz"
-  appcast "https://github.com/JetBrains/kotlin-native/releases.atom"
+  url "https://github.com/JetBrains/kotlin/releases/download/v#{version}/kotlin-native-prebuilt-macos-#{version}.tar.gz",
+      verified: "github.com/JetBrains/kotlin/"
   name "Kotlin Native"
+  desc "LLVM backend for Kotlin"
   homepage "https://kotlinlang.org/docs/reference/native-overview.html"
+
+  livecheck do
+    url :url
+    strategy :git
+    regex(/^v(\d+(?:\.\d+)*)$/)
+  end
 
   conflicts_with formula: "kotlin"
 
-  binary "kotlin-native-macos-#{version.major_minor}/bin/cinterop"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/jsinterop"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/klib"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/konan-lldb"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/konanc"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/kotlinc"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/kotlinc-native"
-  binary "kotlin-native-macos-#{version.major_minor}/bin/run_konan"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/cinterop"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/generate-platform"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/jsinterop"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/klib"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/konan-lldb"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/konanc"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/kotlinc"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/kotlinc-native"
+  binary "kotlin-native-prebuilt-macos-#{version}/bin/run_konan"
 
   caveats do
     depends_on_java "6+"

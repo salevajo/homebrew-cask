@@ -1,6 +1,6 @@
 cask "syntax-highlight" do
-  version "1.0.b26"
-  sha256 "af4444b1604e488efbd207eb9a9e20c59be6848705d93aefb8d85803914d35f8"
+  version "1.0.b31"
+  sha256 "785243d13ed951b7903cf5f72f82ceebb5acd0106d52bb84d31cc6c3e3ba44a0"
 
   url "https://github.com/sbarex/SourceCodeSyntaxHighlight/releases/download/#{version}/Syntax.Highlight.zip"
   appcast "https://github.com/sbarex/SourceCodeSyntaxHighlight/releases.atom"

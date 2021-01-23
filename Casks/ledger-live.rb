@@ -1,9 +1,9 @@
 cask "ledger-live" do
-  version "2.14.0"
-  sha256 "5cdd9d892fac7e6b16e8a0c23a208c7013769d5ba9c251053b25c81404da28a7"
+  version "2.20.0"
+  sha256 "78fee1620138c16ecb04b725ec502fbdac5a5fcf628e8ac286c5a4c6ff28191f"
 
-  # github.com/LedgerHQ/ledger-live-desktop/ was verified as official when first introduced to the cask
-  url "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v#{version}/ledger-live-desktop-#{version}-mac.dmg"
+  url "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v#{version}/ledger-live-desktop-#{version}-mac.dmg",
+      verified: "github.com/LedgerHQ/ledger-live-desktop/"
   appcast "https://github.com/LedgerHQ/ledger-live-desktop/releases.atom"
   name "Ledger Live"
   homepage "https://www.ledgerwallet.com/live"

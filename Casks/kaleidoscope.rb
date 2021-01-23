@@ -1,10 +1,10 @@
 cask "kaleidoscope" do
-  version "2.3.1,1441-apr-7-2020"
-  sha256 "720abc4bc1a5cdb0d58fb1794d16c9d4e00d82a570d428ff7b44e36fa45212bd"
+  version "2.3.6,1447-jan-18-2021"
+  sha256 "81afa75197f5190d15c1bb41fa8c883e71538bdbe7734d156aa9f0952f530677"
 
-  # appcasts.hypergiant.com/ks/prod/ was verified as official when first introduced to the cask
-  url "https://appcasts.hypergiant.com/ks/prod/Kaleidoscope-#{version.before_comma}-build-#{version.after_comma}.zip"
-  appcast "https://appcasts.hypergiant.com/ks/prod/updates"
+  url "https://updates.kaleidoscope.app/v2/prod/Kaleidoscope-#{version.before_comma}-build-#{version.after_comma}.app.zip",
+      verified: "updates.kaleidoscope.app/"
+  appcast "https://updates.kaleidoscope.app/v2/prod/appcast"
   name "Kaleidoscope"
   desc "Spots differences in text and image files"
   homepage "https://www.kaleidoscopeapp.com/"

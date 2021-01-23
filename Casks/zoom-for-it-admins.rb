@@ -1,16 +1,22 @@
 cask "zoom-for-it-admins" do
-  version "5.3.53291.1011"
-  sha256 "11bb7d25cc37d3ea7da63f8516519c6f5023e537e72aae1e245352fd66e44712"
+  version "5.4.59931.0110"
+  sha256 "931832eb4ab7ea0cca1ae3295a7a2c4544b3bc4aec56baeda5fbeed6cedbb6ee"
 
-  # d11yldzmag5yn.cloudfront.net/ was verified as official when first introduced to the cask
-  url "https://d11yldzmag5yn.cloudfront.net/prod/#{version}/ZoomInstallerIT.pkg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://zoom.us/client/latest/Zoom.pkg"
+  url "https://d11yldzmag5yn.cloudfront.net/prod/#{version}/ZoomInstallerIT.pkg",
+      verified: "d11yldzmag5yn.cloudfront.net/"
   name "Zoom for IT Admins"
   desc "Video communication and virtual meeting platform"
   homepage "https://support.zoom.us/hc/en-us/articles/115001799006-Mass-Deployment-with-Preconfigured-Settings-for-Mac"
 
-  auto_updates true
-  conflicts_with cask: "zoomus"
+  livecheck do
+    url "https://zoom.us/client/latest/Zoom.pkg"
+    strategy :header_match
+  end
+
+  # Do not add `auto_updates`. While supporting an auto-update mechanism, this software is more inconvenient than most
+  # See https://github.com/Homebrew/homebrew-cask/pull/93083
+
+  conflicts_with cask: "zoom"
 
   pkg "ZoomInstallerIT.pkg"
 

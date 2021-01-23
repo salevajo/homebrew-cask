@@ -1,9 +1,9 @@
 cask "thonny-xxl" do
-  version "3.2.7"
-  sha256 "d22a59aebf219c0f8afae3b6d340ef08804311e7e4e19bca76b51620386cf9cc"
+  version "3.3.2"
+  sha256 "6b9c24c782dd2d00fe72ec7c9397f01b52e8dfd51237382d6714f19acb8adb55"
 
-  # github.com/thonny/thonny/ was verified as official when first introduced to the cask
-  url "https://github.com/thonny/thonny/releases/download/v#{version}/thonny-xxl-#{version}.pkg"
+  url "https://github.com/thonny/thonny/releases/download/v#{version}/thonny-xxl-#{version}.pkg",
+      verified: "github.com/thonny/thonny/"
   appcast "https://github.com/thonny/thonny/releases.atom"
   name "Thonny (XXL bundle)"
   desc "Python IDE for beginners"

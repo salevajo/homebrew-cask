@@ -1,11 +1,15 @@
 cask "microsoft-teams" do
-  version "1.3.00.26266"
-  sha256 "5237ca869c0c84a330b3038ff8e5ca8b1c430413a663c2642b9d799ec998bbe2"
+  version "1.3.00.33671"
+  sha256 "9e141d6e69a16e9f7a0cfa00d3c7f4217ec7f510d3774b38b46575e6b55c03c0"
 
   url "https://statics.teams.microsoft.com/production-osx/#{version}/Teams_osx.pkg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://aka.ms/teamsmac"
   name "Microsoft Teams"
   homepage "https://teams.microsoft.com/downloads"
+
+  livecheck do
+    url "https://aka.ms/teamsmac"
+    strategy :header_match
+  end
 
   auto_updates true
 

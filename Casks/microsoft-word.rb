@@ -1,9 +1,9 @@
 cask "microsoft-word" do
-  version "16.42.20101102"
-  sha256 "21c54a78343b106a93ffd176130deb9a6c9154f56eb58446fc27192d1e191995"
+  version "16.45.21011103"
+  sha256 "6aba886c12d325f3564850bfea1ad5086d8d713bb8ccfe1ae014655aa9beced1"
 
-  # officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ was verified as official when first introduced to the cask
-  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_#{version}_Installer.pkg"
+  url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_#{version}_Installer.pkg",
+      verified: "officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/"
   appcast "https://docs.microsoft.com/en-us/officeupdates/update-history-office-for-mac"
   name "Microsoft Word"
   homepage "https://products.office.com/en-US/word"

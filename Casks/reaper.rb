@@ -1,14 +1,14 @@
 cask "reaper" do
-  version "6.14.0,6.14"
+  version "6.20.0,6.20"
 
   if MacOS.version <= :mojave
-    sha256 "3fcd1d6168462d6440e8e0763311d47017f479e39695c11ef926900e2a46efc7"
+    sha256 "ad8ac6bce453ea3aa5acbd7aa059a6686cfe85ac0e561bf9bc95c1ec3b886667"
 
     url "https://www.reaper.fm/files/#{version.major}.x/reaper#{version.after_comma.no_dots}_x86_64.dmg"
   else
-    sha256 "45829479dec50691e1ab683545bdb3c026098a2a369de6cbbe69af4bb2522516"
+    sha256 "69af746d23374b39bdfb5ebfc586dfd7f6ca94f4f6d752801ede1e37c7c390f0"
 
-    url "https://www.reaper.fm/files/#{version.major}.x/reaper#{version.after_comma.no_dots}_x86_64_catalina.dmg"
+    url "https://www.reaper.fm/files/#{version.major}.x/reaper#{version.after_comma.no_dots}_x86_64-catalina.dmg"
   end
 
   appcast "https://www.cockos.com/reaper/latestversion/?p=osx_64",

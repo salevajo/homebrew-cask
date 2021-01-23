@@ -1,13 +1,17 @@
 cask "skype" do
-  version "8.65.0.78"
-  sha256 "528c7e0e29f673ea2c7f4a8a22e5ee7de8e6199f7b885543339cb241a8048725"
+  version "8.68.0.96"
+  sha256 "775acf8971c2291684fc36358123230dc7e7737c18f365344f2d9b3a43364803"
 
-  # endpoint920510.azureedge.net/s4l/s4l/download/mac/ was verified as official when first introduced to the cask
-  url "https://endpoint920510.azureedge.net/s4l/s4l/download/mac/Skype-#{version}.dmg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://go.skype.com/mac.download"
+  url "https://endpoint920510.azureedge.net/s4l/s4l/download/mac/Skype-#{version}.dmg",
+      verified: "endpoint920510.azureedge.net/s4l/s4l/download/mac/"
   name "Skype"
   desc "Video chat, voice call and instant messaging application"
   homepage "https://www.skype.com/"
+
+  livecheck do
+    url "https://go.skype.com/mac.download"
+    strategy :header_match
+  end
 
   auto_updates true
 

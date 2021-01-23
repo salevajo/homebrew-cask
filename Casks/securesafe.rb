@@ -1,10 +1,12 @@
 cask "securesafe" do
-  version "2.7.2"
-  sha256 "79cefe64d6c4d6c501496e9b333a9bc785fe8d7a64b473df2216c4e58396d59b"
+  version "2.9.1"
+  sha256 "ba2f8c5efa5489b2f6c60b6fd913de6de05388818ff24d3e330ca266d6f33bdf"
 
-  url "https://www.securesafe.com/downloads/SecureSafe_#{version}.pkg"
+  url "https://www.dswiss.com/userdata/downloads/SecureSafe_#{version}.pkg",
+      verified: "dswiss.com/userdata/downloads/"
   appcast "https://www.securesafe.com/en/downloads/"
   name "SecureSafe"
+  desc "Highly secure online storage with password manager"
   homepage "https://www.securesafe.com/"
 
   depends_on macos: ">= :sierra"

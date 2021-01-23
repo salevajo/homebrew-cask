@@ -1,12 +1,16 @@
 cask "launchcontrol" do
-  version "1.50.1"
-  sha256 "3bb6ad46e8610b093321f0fc71d7d580f4c3aa6c54ffdb435f1dc8988183b0dc"
+  version "1.51.2,1470"
+  sha256 "4a8f1e5e3710f6238b0afc5a8830ad4af3033e8f174bef33414ffa5336b3f80b"
 
-  url "https://www.soma-zone.com/download/files/LaunchControl-#{version}.tar.bz2"
-  appcast "https://www.soma-zone.com/LaunchControl/a/appcast_update.xml"
+  url "https://www.soma-zone.com/download/files/LaunchControl-#{version.before_comma}.tar.bz2"
   name "LaunchControl"
   desc "Create, manage and debug system- and user services"
   homepage "https://www.soma-zone.com/LaunchControl/"
+
+  livecheck do
+    url "https://www.soma-zone.com/LaunchControl/a/appcast_update.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
 

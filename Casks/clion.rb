@@ -1,10 +1,11 @@
 cask "clion" do
-  version "2020.2.4,202.7660.37"
-  sha256 "dd83c148f196a1504ec86d93e105fdf6d8ef72b0c856af5a91153dfe38667281"
+  version "2020.3.1,203.6682.181"
+  sha256 "53ac84ce8c13be1fd560d5d96015173e2544a2b8f0b15424a04ba5fea969973a"
 
   url "https://download.jetbrains.com/cpp/CLion-#{version.before_comma}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&type=release"
   name "CLion"
+  desc "C and C++ IDE"
   homepage "https://www.jetbrains.com/clion/"
 
   auto_updates true

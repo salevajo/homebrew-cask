@@ -1,8 +1,8 @@
 cask "metasploit" do
-  version "6.0.11,20201012102846"
-  sha256 "90b21ed0e71ebdb4eccf9c1c524a5cfb022dc8a51ea83881d7da72223cfbab6a"
+  version "6.0.26,20210114112917.git.2.c9a5df5"
+  sha256 "e98ca36b0874edcd03f017a3a7d7e24dfd5c493d9d9115926711b355484f09d2"
 
-  url "https://osx.metasploit.com/metasploit-framework-#{version.before_comma}+#{version.after_comma}-1rapid7-1.pkg"
+  url "https://osx.metasploit.com/metasploit-framework-#{version.before_comma}%2B#{version.after_comma}-1rapid7-1.pkg"
   appcast "https://osx.metasploit.com/LATEST"
   name "Metasploit Framework"
   desc "Penetration testing framework"
@@ -10,7 +10,7 @@ cask "metasploit" do
 
   depends_on formula: "nmap"
 
-  pkg "metasploit-framework-#{version.before_comma} #{version.after_comma}-1rapid7-1.pkg"
+  pkg "metasploit-framework-#{version.before_comma}+#{version.after_comma}-1rapid7-1.pkg"
   binary "/opt/metasploit-framework/bin/msfbinscan"
   binary "/opt/metasploit-framework/bin/msfconsole"
   binary "/opt/metasploit-framework/bin/msfd"

@@ -1,12 +1,20 @@
 cask "suspicious-package" do
-  version "3.6"
-  sha256 "86163e9b3f7e322b7d9fddd1d11ce88829baa0b4a91515c9c135cf6379e4432e"
+  version "3.6,736"
+  sha256 :no_check
 
   url "https://www.mothersruin.com/software/downloads/SuspiciousPackage.dmg"
-  appcast "https://www.mothersruin.com/software/SuspiciousPackage/data/SuspiciousPackageVersionInfo.plist"
   name "Suspicious Package"
   desc "Application for inspecting installer packages"
   homepage "https://www.mothersruin.com/software/SuspiciousPackage/"
+
+  livecheck do
+    url "https://www.mothersruin.com/software/SuspiciousPackage/data/SuspiciousPackageVersionInfo.plist"
+    strategy :page_match do |page|
+      svs = page.match(/CFBundleShortVersionString.*?\n.*?(\d+(?:\.\d+)*)/i)
+      bv = page.match(/CFBundleVersion.*?\n.*?(\d+(?:\.\d+)*)/i)
+      "#{svs[1]},#{bv[1]}"
+    end
+  end
 
   depends_on macos: ">= :mojave"
 

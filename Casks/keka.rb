@@ -1,9 +1,9 @@
 cask "keka" do
-  version "1.1.30"
-  sha256 "b37b827e9a8885e63f108190cb23b3ac3f67f1e260462f591e69c2db2a941f93"
+  version "1.2.7"
+  sha256 "53586a0d994cc34f47fc58c48b1280acd442ef4e14c16b5608b402b6f87f3f11"
 
-  # github.com/aonez/Keka/ was verified as official when first introduced to the cask
-  url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg"
+  url "https://github.com/aonez/Keka/releases/download/v#{version}/Keka-#{version}.dmg",
+      verified: "github.com/aonez/Keka/"
   appcast "https://github.com/aonez/Keka/releases.atom"
   name "Keka"
   desc "File archiver"

@@ -1,15 +1,14 @@
 cask "flutter" do
-  version "1.22.1"
-  sha256 "04f5b8a1af40814ff496d48c7a71fa8ff10ef396fca6a9feb2d231a3f7776b9a"
+  version "1.22.5"
+  sha256 "a64f5df488b95ac41036559bf436189037a868b393b1c050649cbb61d7d3b932"
 
-  # storage.googleapis.com/flutter_infra/ was verified as official when first introduced to the cask
-  url "https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_#{version}-stable.zip"
+  url "https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_#{version}-stable.zip",
+      verified: "storage.googleapis.com/flutter_infra/"
   name "Flutter SDK"
   desc "UI toolkit for building applications for mobile, web and desktop"
   homepage "https://flutter.dev/"
 
   auto_updates true
-  depends_on macos: ">= :catalina"
 
   binary "flutter/bin/dart"
   binary "flutter/bin/flutter"

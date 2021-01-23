@@ -1,13 +1,19 @@
 cask "bluestacks" do
-  version "4.230.10.2820,37a27c1765e16b22ca7c3bddc42177bd"
-  sha256 "9af74c675d4161593c6537b350a7ce0d4de3def535b652bac918f815fc48266e"
+  version "4.240.5.2918,c72df965bb755c78ee4aa0dfd65a169b"
+  sha256 "30eb8e64a1c1aa85faa90f709ff68b9885c548f15041158972a59be0dad48a3a"
 
   url "https://cdn3.bluestacks.com/downloads/mac/bgp64_mac/#{version.before_comma}/#{version.after_comma}/x64/BlueStacksInstaller_#{version.before_comma}.dmg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://cloud.bluestacks.com/api/getdownloadnow?platform=mac",
-          must_contain: version.before_comma
   name "BlueStacks"
   desc "Mobile gaming platform"
   homepage "https://www.bluestacks.com/"
+
+  livecheck do
+    url "https://cloud.bluestacks.com/api/getdownloadnow?platform=mac&mac_version=#{MacOS.full_version}"
+    strategy :header_match do |headers|
+      match = headers["location"].match(%r{/(\d(?:\.\d+)*)/([^/]+)/})
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   depends_on macos: ">= :sierra"
 

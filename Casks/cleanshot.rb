@@ -1,11 +1,16 @@
 cask "cleanshot" do
-  version "3.4.1"
-  sha256 "e3cf9c7997d0e58a1237d24b73175ef9dd16599dbae125e59db01a886b46516c"
+  version "3.4.6"
+  sha256 "9fa4f3314ad24c848c7b55330b60914fe91630999487deb83dcd7ee1876413ab"
 
   url "https://updates.getcleanshot.com/v#{version.major}/CleanShot-X-#{version}.dmg"
-  appcast "https://updates.getcleanshot.com/v#{version.major}/appcast.xml"
   name "CleanShot"
+  desc "Screen capturing tool"
   homepage "https://getcleanshot.com/"
+
+  livecheck do
+    url "https://updates.getcleanshot.com/v#{version.major}/appcast.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
 

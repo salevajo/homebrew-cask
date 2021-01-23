@@ -1,9 +1,9 @@
 cask "dbeaver-community" do
-  version "7.2.2"
-  sha256 "cd8823b5e8b3fe84d7708e23ce632d3493186c5af379b8db1aed983028470579"
+  version "7.3.3"
+  sha256 "1e9402c0d6ce5888ab96f71fc5683399d905146c575dda9de945f5ad321c8da7"
 
-  # github.com/dbeaver/dbeaver/ was verified as official when first introduced to the cask
-  url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-macos.dmg"
+  url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-macos.dmg",
+      verified: "github.com/dbeaver/dbeaver/"
   appcast "https://github.com/dbeaver/dbeaver/releases.atom"
   name "DBeaver Community Edition"
   desc "Free universal database tool and SQL client"

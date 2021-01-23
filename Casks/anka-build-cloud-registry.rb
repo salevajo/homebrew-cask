@@ -1,12 +1,12 @@
 cask "anka-build-cloud-registry" do
-  version "1.11.0-d43f91c"
-  sha256 "5cd249263b1242a50394c1ee2325aa7e3c53d3b4b4f753e2b78e4c98d7861425"
+  version "1.13.0-9fae2f3"
+  sha256 "416996197ad22117a7293ac58dc2325434048639ac4709871230dac108c51430"
 
-  # d1efqjhnhbvc57.cloudfront.net/ was verified as official when first introduced to the cask
-  url "https://d1efqjhnhbvc57.cloudfront.net/AnkaRegistry-#{version}.pkg"
+  url "https://d1efqjhnhbvc57.cloudfront.net/AnkaRegistry-#{version}.pkg",
+      verified: "d1efqjhnhbvc57.cloudfront.net/"
   appcast "https://ankadocs.veertu.com/docs/release-notes/"
   name "Anka Build Cloud Registry"
-  desc "Store Anka's macOS virtual machines in a central location"
+  desc "Store Anka's virtual machines in a central location"
   homepage "https://veertu.com/"
 
   depends_on macos: ">= :yosemite"

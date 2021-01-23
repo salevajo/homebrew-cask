@@ -1,13 +1,17 @@
 cask "maccy" do
-  version "0.17.0"
-  sha256 "4124d36eadf67db0fd3d6cf1d378d2e7871aeb536254b922d5ae30de62787dbc"
+  version "0.18.2"
+  sha256 "5d72afe8751b6023ef07dd213e7753bd4f6b14164351706270d66dfd4efcabac"
 
-  # github.com/p0deje/Maccy/ was verified as official when first introduced to the cask
-  url "https://github.com/p0deje/Maccy/releases/download/#{version}/Maccy.app.zip"
-  appcast "https://github.com/p0deje/Maccy/releases.atom"
+  url "https://github.com/p0deje/Maccy/releases/download/#{version}/Maccy.app.zip",
+      verified: "github.com/p0deje/Maccy/"
   name "Maccy"
   desc "Clipboard manager"
   homepage "https://maccy.app/"
+
+  livecheck do
+    url "https://raw.githubusercontent.com/p0deje/Maccy/master/appcast.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
   depends_on macos: ">= :mojave"

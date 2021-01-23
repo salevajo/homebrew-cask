@@ -1,11 +1,15 @@
 cask "porting-kit" do
-  version "3.0.49"
-  sha256 "127a24169d1cff16901aba214446851892e0c2de026c5021fd73913f1bb9f86f"
+  version "3.0.58"
+  sha256 "abbee91f41e03e414fc1325b7e21f7998d76c39527e4329eaa3bb4a8e85fb6ac"
 
   url "https://portingkit.com/kit/Porting%20Kit%20#{version}.zip"
-  appcast "https://portingkit.com/kit/updatecast.xml"
   name "Porting Kit"
   homepage "https://portingkit.com/"
+
+  livecheck do
+    url "https://portingkit.com/kit/updatecast.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
 

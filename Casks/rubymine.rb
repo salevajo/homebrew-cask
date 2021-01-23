@@ -1,10 +1,11 @@
 cask "rubymine" do
-  version "2020.2.3,202.7660.39"
-  sha256 "5d04a3f5984d349d5b4e6545fcb692690ce1add0a113dabced6dc5925c3aef15"
+  version "2020.3.1,203.6682.166"
+  sha256 "3dde9ce0f55899ae0921f47d0950b010cb56cde972c845280d52737eb2b65407"
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version.before_comma}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=RM&latest=true&type=release"
   name "RubyMine"
+  desc "Ruby on Rails IDE"
   homepage "https://www.jetbrains.com/ruby/"
 
   auto_updates true

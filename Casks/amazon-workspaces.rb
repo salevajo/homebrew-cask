@@ -1,12 +1,16 @@
 cask "amazon-workspaces" do
-  version "3.0.11.1344"
-  sha256 "e70092f91850be1b1b168431ae197b5a4541a55e3f88824c2c21069400409de7"
+  version "3.1.2.1599"
+  sha256 :no_check
 
-  # workspaces-client-updates.s3.amazonaws.com/ was verified as official when first introduced to the cask
-  url "https://workspaces-client-updates.s3.amazonaws.com/prod/iad/osx/WorkSpaces.pkg"
-  appcast "https://d2td7dqidlhjx7.cloudfront.net/prod/iad/osx/WorkSpacesAppCast_macOS_20171023.xml"
+  url "https://workspaces-client-updates.s3.amazonaws.com/prod/iad/osx/WorkSpaces.pkg",
+      verified: "workspaces-client-updates.s3.amazonaws.com/"
   name "Amazon Workspaces"
   homepage "https://clients.amazonworkspaces.com/"
+
+  livecheck do
+    url "https://d2td7dqidlhjx7.cloudfront.net/prod/iad/osx/WorkSpacesAppCast_macOS_20171023.xml"
+    strategy :sparkle
+  end
 
   pkg "WorkSpaces.pkg"
 

@@ -1,9 +1,9 @@
 cask "plexamp" do
-  version "3.2.2"
-  sha256 "1b9d9bf3aafc08ef4032a46c69e7e8ecde5cd6d53cbc897d6d30e66386a705d0"
+  version "3.4.1"
+  sha256 "8e675bb1802b498ff2e3f68a647637b02c8c77bd02f7898e3dca850e82773ce0"
 
-  # plexamp.plex.tv/ was verified as official when first introduced to the cask
-  url "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-#{version}.dmg"
+  url "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-#{version}.dmg",
+      verified: "plexamp.plex.tv/"
   appcast "https://plexamp.plex.tv/plexamp.plex.tv/desktop/latest-mac.yml"
   name "Plexamp"
   desc "Music player focusing on visuals"

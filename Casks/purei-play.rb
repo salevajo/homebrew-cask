@@ -1,9 +1,10 @@
 cask "purei-play" do
-  version :latest
+  version "0.36-12-ge90a22ae,03-01-2021"
   sha256 :no_check
 
   url "https://purei.org/download_latest.php?platform=macos"
-  name "Play! - PS2 Emulator"
+  name "Play!"
+  desc "PlayStation 2 emulator"
   homepage "https://purei.org/"
 
   app "Play.app"

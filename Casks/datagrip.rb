@@ -1,10 +1,11 @@
 cask "datagrip" do
-  version "2020.2.3,202.7319.56"
-  sha256 "9d150f3f2da74f43d232ded7ac6b4fdba0a53b7f62d488b873353e53175d94b9"
+  version "2020.3.1,203.6682.134"
+  sha256 "9a0b4f28e87fcb706086807dfb33adbcff573941a77fefa96143b7726d45d83e"
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version.before_comma}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=DG&latest=true&type=release"
   name "DataGrip"
+  desc "Databases & SQL IDE"
   homepage "https://www.jetbrains.com/datagrip/"
 
   auto_updates true
@@ -21,9 +22,9 @@ cask "datagrip" do
   end
 
   zap trash: [
-    "~/Library/Application Support/DataGrip#{version.major_minor}",
-    "~/Library/Caches/DataGrip#{version.major_minor}",
-    "~/Library/Logs/DataGrip#{version.major_minor}",
-    "~/Library/Preferences/DataGrip#{version.major_minor}",
+    "~/Library/Application Support/JetBrains/DataGrip#{version.major_minor}",
+    "~/Library/Caches/JetBrains/DataGrip#{version.major_minor}",
+    "~/Library/Logs/JetBrains/DataGrip#{version.major_minor}",
+    "~/Library/Saved Application State/com.jetbrains.datagrip.savedState",
   ]
 end

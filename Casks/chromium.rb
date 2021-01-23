@@ -1,13 +1,17 @@
 cask "chromium" do
-  version "816015"
-  sha256 "f69d0063c78a97e5464a871589fb9575055636c99a317417444f4e0bb6319867"
+  version "845727"
+  sha256 "5dcd78571fad5f33f03c5551161fc35ebe218a3ed71f8c240c06a1ad8197f7e6"
 
-  # commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/ was verified as official when first introduced to the cask
-  url "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/#{version}/chrome-mac.zip"
-  appcast "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2FLAST_CHANGE?alt=media"
+  url "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/#{version}/chrome-mac.zip",
+      verified: "commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/"
   name "Chromium"
   desc "Free and open-source web browser"
   homepage "https://www.chromium.org/Home"
+
+  livecheck do
+    url "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2FLAST_CHANGE?alt=media"
+    regex(/v?(\d+(?:\.\d+)*)/i)
+  end
 
   conflicts_with cask: [
     "eloston-chromium",

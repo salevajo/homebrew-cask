@@ -1,9 +1,9 @@
 cask "github" do
-  version "2.5.6-e0dac138"
-  sha256 "b55bf478252948799791402a12f81fe9ee3a1b201636f323373fcec00759f190"
+  version "2.6.2-a01e1223"
+  sha256 "5f97e6697aa9d5311876ccdf844298e18ce4d0f028ff9d4739f16fa6d541a8eb"
 
-  # githubusercontent.com/ was verified as official when first introduced to the cask
-  url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop.zip"
+  url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop.zip",
+      verified: "githubusercontent.com/"
   appcast "https://github.com/desktop/desktop/releases.atom"
   name "GitHub Desktop"
   desc "Desktop client for GitHub repositories"

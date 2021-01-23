@@ -1,13 +1,17 @@
 cask "downie" do
-  version "4.1.7,4164"
-  sha256 "9244d9f42653c33117fe4232ff55cc989b4309e4f7eee716f0e89c4ad061c865"
+  version "4.1.14,4196"
+  sha256 "d54f2a2ab68fe736e200ac8581220f66b709b9b0351a009a5ecb88109e430d6e"
 
-  # charliemonroesoftware.com/ was verified as official when first introduced to the cask
-  url "https://charliemonroesoftware.com/trial/downie/v#{version.major}/Downie_#{version.major}_#{version.after_comma}.dmg"
-  appcast "https://charliemonroesoftware.com/trial/downie/v#{version.major}/updates.xml"
+  url "https://charliemonroesoftware.com/trial/downie/v#{version.major}/Downie_#{version.major}_#{version.after_comma}.dmg",
+      verified: "charliemonroesoftware.com/"
   name "Downie"
   desc "Downloads videos from different websites"
   homepage "https://software.charliemonroe.net/downie.php"
+
+  livecheck do
+    url "https://charliemonroesoftware.com/trial/downie/v#{version.major}/updates.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
   depends_on macos: ">= :el_capitan"

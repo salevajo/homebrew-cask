@@ -1,13 +1,20 @@
 cask "stoplight-studio" do
-  version "2.0.0"
-  sha256 "99dcb8ac4c140f472cfaa6e3d3046fa2f2ece0ba631a4a8a1c6c9b1056876467"
+  version "2.2.0,5343.git-ab43444"
+  sha256 "c5a8c8e3465a35f8a6f5bc9642674002686256609c825c46c7213a637cffe28c"
 
-  # github.com/stoplightio/studio/ was verified as official when first introduced to the cask
-  url "https://github.com/stoplightio/studio/releases/download/v#{version}/stoplight-studio-mac.dmg"
-  appcast "https://github.com/stoplightio/studio/releases.atom"
+  url "https://github.com/stoplightio/studio/releases/download/v#{version.before_comma}-stable.#{version.after_comma}/stoplight-studio-mac.dmg",
+      verified: "github.com/stoplightio/studio/"
   name "Stoplight Studio"
   desc "Editor for designing and documenting APIs"
   homepage "https://stoplight.io/studio/"
+
+  livecheck do
+    url "https://github.com/stoplightio/studio/releases/latest"
+    strategy :page_match do |page|
+      match = page.match(%r{href=.*?/v?(\d+(?:\.\d+)*)-stable\.([^/]+)/stoplight-studio-mac\.dmg}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   app "Stoplight Studio.app"
 end
