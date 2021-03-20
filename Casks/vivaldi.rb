@@ -1,8 +1,8 @@
 cask "vivaldi" do
-  version "3.5.2115.87"
-  sha256 "05046f5ced417e57921c2d59863eb1053f5ac7650a31fd110cb246e230f5eac0"
+  version "3.7.2218.45"
+  sha256 "932f92d7e196d38962633180cc4fa9b514c6bb572c8e299b924fb3118e8cf5f8"
 
-  url "https://downloads.vivaldi.com/stable/Vivaldi.#{version}.dmg"
+  url "https://downloads.vivaldi.com/stable/Vivaldi.#{version}.universal.dmg"
   name "Vivaldi"
   desc "Web browser focusing on customization and control"
   homepage "https://vivaldi.com/"

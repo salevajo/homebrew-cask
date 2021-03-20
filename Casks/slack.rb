@@ -1,13 +1,13 @@
 cask "slack" do
-  version "4.12.2"
+  version "4.14.0"
 
   if Hardware::CPU.intel?
-    sha256 "c7f7d16a95b18bb9d39bb83e23a26d898d9225c327e227ff39ed78479fd8d461"
+    sha256 "46f76a89f1350cd686ab364fc197890934d9b34a1ffc295b63d96c15b3d5f24e"
 
     url "https://downloads.slack-edge.com/releases/macos/#{version}/prod/x64/Slack-#{version}-macOS.dmg",
         verified: "downloads.slack-edge.com/"
   else
-    sha256 "fc1b5c1968d57b9388863c2314450fe8d761e2052ae8d367a0e85b3fc9370604"
+    sha256 "5dea1276aa165642fa175aba1c7bc7146af7fdfb4696fe8c35dff0df29cd6b6a"
 
     url "https://downloads.slack-edge.com/releases/macos/#{version}/prod/arm64/Slack-#{version}-macOS.dmg",
         verified: "downloads.slack-edge.com/"

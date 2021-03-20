@@ -1,8 +1,15 @@
 cask "eloston-chromium" do
-  version "88.0.4324.104-1.1"
-  sha256 "8e2b4b8d8133a467c0250ac5cbf7e5b4281d608e14ddc376cde6824cf2facab2"
+  if Hardware::CPU.intel?
+    arch = "x86-64"
+    version "89.0.4389.90-1.1"
+    sha256 "2ee3dcd69e5852c588365bc8ce1b9e5a4fd7e4dc8b9ec200ea1e5b9db2afca48"
+  else
+    arch = "arm64"
+    version "89.0.4389.90-1.1"
+    sha256 "1fe0c033da30ff3012226a658b6d1db7a98a3cb564dea7cbd5b5a712de18eb98"
+  end
 
-  url "https://github.com/kramred/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}_macos.dmg",
+  url "https://github.com/kramred/ungoogled-chromium-macos/releases/download/#{version}_#{arch}/ungoogled-chromium_#{version}_#{arch}-macos.dmg",
       verified: "github.com/kramred/ungoogled-chromium-macos/"
   appcast "https://github.com/kramred/ungoogled-chromium-macos/releases.atom"
   name "Ungoogled Chromium"
@@ -16,9 +23,9 @@ cask "eloston-chromium" do
   app "Chromium.app"
 
   zap trash: [
-    "~/Library/Preferences/org.chromium.Chromium.plist",
-    "~/Library/Caches/Chromium",
     "~/Library/Application Support/Chromium",
+    "~/Library/Caches/Chromium",
+    "~/Library/Preferences/org.chromium.Chromium.plist",
     "~/Library/Saved Application State/org.chromium.Chromium.savedState",
   ]
 end

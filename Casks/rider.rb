@@ -1,10 +1,11 @@
 cask "rider" do
-  version "2020.3.2,203.6682.21"
-  sha256 "0d1c49a640452a5c809c1b9f7359a9f0375b588c3e4132f96ed94ef4319ca360"
+  version "2020.3.4,203.7717.10"
+  sha256 "3454d0df7abfa3af8c3cf76c4529057b9c7c02e6ee57065e541f9f1d2497c28a"
 
   url "https://download.jetbrains.com/rider/JetBrains.Rider-#{version.before_comma}.dmg"
   appcast "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&type=release"
   name "Jetbrains Rider"
+  desc "Cross-Platform .NET IDE"
   homepage "https://www.jetbrains.com/rider/"
 
   auto_updates true

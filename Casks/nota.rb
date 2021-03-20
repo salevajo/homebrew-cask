@@ -1,6 +1,6 @@
 cask "nota" do
-  version "0.21.1"
-  sha256 "3b8b159ea5ae2af7ce11c875dcb5a897a4e5031a05abfe0ac42a26dc67ddfd32"
+  version "0.23.1"
+  sha256 "00e92be3991e4ea74b224d4cb5dfd529c07f54e691d2e0987a62330858a012af"
 
   url "https://github.com/notaapp/releases/releases/download/#{version}/Nota-#{version}-mac.zip",
       verified: "github.com/notaapp/releases/"

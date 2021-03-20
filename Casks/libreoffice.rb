@@ -1,16 +1,21 @@
 cask "libreoffice" do
-  version "7.0.4"
-  sha256 "0fcd83399609780013aee1acc805d1380434118d459829908aa409f7eb67c4e7"
+  version "7.1.1"
+  sha256 "c559fac982a44787c13656a210dfc424174800813c8101b09dea8b8d364743a4"
 
   url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg",
       verified: "documentfoundation.org/"
-  appcast "https://download.documentfoundation.org/libreoffice/stable/"
   name "LibreOffice"
   desc "Office suite"
   homepage "https://www.libreoffice.org/"
 
+  livecheck do
+    url "https://download.documentfoundation.org/libreoffice/stable/"
+    strategy :page_match
+    regex(%r{href="(\d+(?:\.\d+)*)/"}i)
+  end
+
   conflicts_with cask: "homebrew/cask-versions/libreoffice-still"
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :yosemite"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"

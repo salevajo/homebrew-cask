@@ -1,6 +1,6 @@
 cask "keysmith" do
-  version "1.9.1,77"
-  sha256 "91fc01ed9dc8d5ab777f49ade10d5bdc5b44f57b7fd5a14cbd01ad8e7aaac88d"
+  version "1.15.2,86"
+  sha256 "56f1beb671f2f6b24b429c7c486e5d758aea11dd25031227cab46291c68f9746"
 
   url "https://keysmith.app/versions/Keysmith-#{version.before_comma}.dmg"
   name "Keysmith"

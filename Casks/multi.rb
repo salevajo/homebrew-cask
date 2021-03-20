@@ -1,6 +1,6 @@
 cask "multi" do
-  version "2.1.0"
-  sha256 "6b22e67312ba2f2c3c1c9095cc698cad45b1e51f8564aca3a61826a4779262d7"
+  version "2.1.2"
+  sha256 "808989027656c166d703c31934a673708a0947cc812fb9e66adaa2c878d3f981"
 
   url "https://github.com/hkgumbs/multi/releases/download/v#{version}/Multi.#{version}.dmg"
   appcast "https://github.com/hkgumbs/multi/releases.atom"
@@ -9,4 +9,11 @@ cask "multi" do
   homepage "https://github.com/hkgumbs/multi"
 
   app "Multi.app"
+
+  zap trash: [
+    "~/Library/Caches/llc.gumbs.multi.*",
+    "~/Library/Caches/llc.gumbs.multi",
+    "~/Library/Preferences/llc.gumbs.multi.*.plist",
+    "~/Library/Saved Application State/llc.gumbs.multi.savedState",
+  ]
 end

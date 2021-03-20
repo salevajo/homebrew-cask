@@ -6,8 +6,8 @@ cask "avidemux" do
     url "https://downloads.sourceforge.net/avidemux/avidemux/#{version}/Avidemux_#{version}_Mojava_64Bits_Qt5.dmg",
         verified: "sourceforge.net/avidemux/"
   else
-    version "2.7.6"
-    sha256 "91a4d9757173c261eac01a79019aed38a1185951ff2b67352e6ecbac2ea5f56f"
+    version "2.7.8"
+    sha256 "517b0197d6c9e0dd1e8cf70c235cb1af3d11af9168569693362781c61eb07338"
 
     url "https://downloads.sourceforge.net/avidemux/avidemux/#{version}/Avidemux_#{version}_Catalina_64Bits_Qt5.dmg",
         verified: "sourceforge.net/avidemux/"
@@ -19,4 +19,6 @@ cask "avidemux" do
   homepage "https://www.avidemux.org/"
 
   app "Avidemux_#{version}.app"
+  binary "#{appdir}/Avidemux_#{version}.app/Contents/MacOS/avidemux_cli", target: "avidemux"
+  binary "#{appdir}/Avidemux_#{version}.app/Contents/MacOS/avidemux_jobs"
 end

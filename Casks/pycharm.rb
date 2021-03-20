@@ -1,12 +1,26 @@
 cask "pycharm" do
-  version "2020.3.2,203.6682.179"
-  sha256 "f97163c33005f684b33c0a0b14ea95aa4a44ac28722c15a69bcaa919748cacad"
+  version "2020.3.4,203.7717.65"
 
-  url "https://download.jetbrains.com/python/pycharm-professional-#{version.before_comma}.dmg"
-  appcast "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release"
+  if Hardware::CPU.intel?
+    sha256 "629c6cfa6ca395f509276a7e58bcb84a81af5b4f9949a032c45e497e48724670"
+    url "https://download.jetbrains.com/python/pycharm-professional-#{version.before_comma}.dmg"
+  else
+    sha256 "19f2ed11d47f1aabbc06a997c22c14bf52df95ef91456dfe354aef4f495b7c26"
+    url "https://download.jetbrains.com/python/pycharm-professional-#{version.before_comma}-aarch64.dmg"
+  end
+
   name "PyCharm"
   desc "IDE for professional Python development"
   homepage "https://www.jetbrains.com/pycharm/"
+
+  livecheck do
+    url "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release"
+    strategy :page_match do |page|
+      version = page.match(/"version":"(\d+(?:\.\d+)*)/i)
+      build = page.match(/"build":"(\d+(?:\.\d+)*)/i)
+      "#{version[1]},#{build[1]}"
+    end
+  end
 
   auto_updates true
 

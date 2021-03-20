@@ -3,11 +3,11 @@ cask "docker" do
     version "18.06.1-ce-mac73,26764"
     sha256 "3429eac38cf0d198039ad6e1adce0016f642cdb914a34c67ce40f069cdb047a5"
   else
-    version "3.1.0,51484"
-    sha256 "9e68684d7d19de90034630ec2127a5d49138dc314857059fa75a99687be2b6b8"
+    version "3.2.2,61853"
+    sha256 "c44d4039f46ea0df07c2fe7825ca80c02cea9b6c4ac1646263b6a960cdbeaa6b"
   end
 
-  url "https://desktop.docker.com/mac/stable/#{version.after_comma}/Docker.dmg"
+  url "https://desktop.docker.com/mac/stable/amd64/#{version.after_comma}/Docker.dmg"
   name "Docker Desktop"
   name "Docker Community Edition"
   name "Docker CE"
