@@ -1,9 +1,10 @@
 cask "multitouch" do
-  version "1.24.3,130"
-  sha256 "8bea678f95cb79b7f3d0163670e3b2f4c74fa4c23d95388987ba78eb6e393f36"
+  version "1.24.11,138"
+  sha256 "cc937a1e6dded57402cf6a688bc66f209f0320e2f8f7fa69a09a1f77cdc93586"
 
   url "https://multitouch.app/downloads/multitouch#{version.before_comma}.dmg"
   name "Multitouch"
+  desc "Add more gestures for Trackpad and Magic Mouse"
   homepage "https://multitouch.app/"
 
   livecheck do
