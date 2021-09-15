@@ -18,8 +18,8 @@ cask "onyx" do
     version "3.8.7"
     sha256 "0dd8119ad3441c5130ca584ac90ad450c272aab8b577925561a2536da48d2d54"
   else
-    version "3.9.6"
-    sha256 "9f6e9492d5963f552d0c64e13518c91bbe2a41c20d67e781b3bc251c3945a8a0"
+    version "3.9.9"
+    sha256 "6312b02983bd01f22840ac58380caa97659eede574c7579d12438584b9dffff4"
   end
 
   url "https://www.titanium-software.fr/download/#{MacOS.version.to_s.delete(".")}/OnyX.dmg"
@@ -33,15 +33,7 @@ cask "onyx" do
   end
 
   # Unusual case: The software will stop working, or is dangerous to run, on the next macOS release.
-  depends_on macos: [
-    :yosemite,
-    :el_capitan,
-    :sierra,
-    :high_sierra,
-    :mojave,
-    :catalina,
-    :big_sur,
-  ]
+  depends_on macos: "<= :big_sur"
 
   app "OnyX.app"
 

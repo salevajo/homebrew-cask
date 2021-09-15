@@ -1,12 +1,17 @@
 cask "rocket-chat" do
-  version "3.2.2"
-  sha256 "cdbf16355b4df92e75e7ba900c21127ee5e845e1b836143b4dfcf7f2b286e60b"
+  version "3.5.3"
+  sha256 "4e9d969ada69a67c499828abf44cc08fb48eac0686b1603807f60c0c4fe36902"
 
   url "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/#{version}/rocketchat-#{version}.dmg",
       verified: "github.com/RocketChat/Rocket.Chat.Electron/"
   name "Rocket.Chat"
   desc "Official desktop client for Rocket.Chat"
   homepage "https://rocket.chat/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   auto_updates true
 

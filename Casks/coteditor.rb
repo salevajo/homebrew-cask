@@ -9,8 +9,8 @@ cask "coteditor" do
     version "3.9.7"
     sha256 "be34d4f800e73cc8363d8b83e1b257a06176dc85d345d680149b108f51686cf2"
   else
-    version "4.0.4"
-    sha256 "4a27e5f993cf1b661d3523a29df5ae6d0372d8dd4ea43473c776b924a3b66901"
+    version "4.0.7-1"
+    sha256 "7420c076412ee0c2716d88de5272ffc54d086e8fb854b0b6e3667cca28a05731"
   end
 
   url "https://github.com/coteditor/CotEditor/releases/download/#{version}/CotEditor_#{version}.dmg",
@@ -18,6 +18,12 @@ cask "coteditor" do
   name "CotEditor"
   desc "Plain-text editor for web pages, program source codes and more"
   homepage "https://coteditor.com/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+    regex(%r{href=.*?/tag/v?(\d+(?:[.-]\d+)+)["' >]}i)
+  end
 
   auto_updates true
 

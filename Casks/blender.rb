@@ -1,12 +1,12 @@
 cask "blender" do
-  version "2.93.0"
+  version "2.93.4"
 
   if Hardware::CPU.intel?
-    sha256 "8d5b1ab508c99aa9ddfabef02c13583f0cb31046f5e3bc33db477dbb940e6745"
+    sha256 "9aab9e161e326f02d5ca51b9f77187e931ebc779bd85a604d797c187cd1611f4"
 
     url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-x64.dmg"
   else
-    sha256 "7a433d3254d212b6c809885dc22fe94727cf03839f50c2605946e52d8b06a336"
+    sha256 "0478a156829213a683b6be92cd12fe63c4f58fce3d0c2b4b839c157737eb14bf"
 
     url "https://download.blender.org/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg"
   end

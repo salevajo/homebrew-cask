@@ -1,6 +1,6 @@
 cask "banktivity" do
-  version "8.3.1"
-  sha256 "928256f13c2c0daaa20fc5aea25f89d0354720e0cda573c8e8f2558f3151555f"
+  version "8.4.2"
+  sha256 "b8af25fdc121388e0540e5010cba131562dc6879b4be7023869781509c2c8668"
 
   url "https://www.iggsoft.com/banktivity/Banktivity#{version}.dmg",
       verified: "iggsoft.com/"
@@ -16,4 +16,9 @@ cask "banktivity" do
   depends_on macos: ">= :catalina"
 
   app "Banktivity.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/com.iggsoftware.banktivity",
+    "~/Library/Containers/com.iggsoftware.banktivity",
+  ]
 end

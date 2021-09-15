@@ -1,8 +1,8 @@
 cask "royal-tsx" do
-  version "4.3.6.1000"
-  sha256 "9fd00742126a19acca5b93751c57236093639c7c77955af6375592dce4e44360"
+  version "5.0.3.1000"
+  sha256 "4c07a24501460fcb99bfefb001078dae33a39e5f2759423d3e89faca68ebb4de"
 
-  url "https://royaltsx-v4.royalapps.com/updates/royaltsx_#{version}.dmg"
+  url "https://royaltsx-v#{version.major}.royalapps.com/updates/royaltsx_#{version}.dmg"
   name "Royal TSX"
   desc "Remote management solution"
   homepage "https://www.royalapps.com/ts/mac/features"
@@ -13,7 +13,7 @@ cask "royal-tsx" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :mojave"
 
   app "Royal TSX.app"
 

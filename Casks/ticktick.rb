@@ -1,6 +1,6 @@
 cask "ticktick" do
-  version "3.8.00,174"
-  sha256 "48a4fd368013aa61eacc4050b6680871b62cc28ad0754ce0b7fdc6cf114b7998"
+  version "4.0.05,188"
+  sha256 "08712f7f791ec67c99db840fdf5d52d868abbea1a52debebbff8e2aa3cd31bdb"
 
   url "https://appest-public.s3.amazonaws.com/download/mac/TickTick_#{version.before_comma}_#{version.after_comma}.dmg",
       verified: "appest-public.s3.amazonaws.com/"
@@ -11,7 +11,7 @@ cask "ticktick" do
   livecheck do
     url "https://www.ticktick.com/static/getApp/download?type=mac"
     strategy :header_match do |headers|
-      match = headers["location"].match(%r{/TickTick[._-]v?(\d+(?:\.\d+)+)[_-](\d+)\.dmg}i)
+      match = headers["location"].match(/TickTick[._-]v?(\d+(?:\.\d+)+)[_-](\d+)\.dmg/i)
       "#{match[1]},#{match[2]}"
     end
   end

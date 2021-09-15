@@ -1,6 +1,6 @@
 cask "trilium-notes" do
-  version "0.47.4"
-  sha256 "63f4889b63d327667eca4d85799adacbb84334ce9c2903eda271b124693f1397"
+  version "0.47.7"
+  sha256 "3b847b03d2d090643fd262003fde8796df60d14b30f1e02980de80b553f1db1b"
 
   url "https://github.com/zadam/trilium/releases/download/v#{version}/trilium-mac-x64-#{version}.zip"
   name "Trilium Notes"

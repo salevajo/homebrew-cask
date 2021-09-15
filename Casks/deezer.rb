@@ -1,6 +1,6 @@
 cask "deezer" do
-  version "5.10.0"
-  sha256 "dc9df3b0b0e0ab5e96db3831e854675e55b6155ed6dde3e79cfb7657265f7c58"
+  version "5.30.50"
+  sha256 "1e9a7bb08d38f2f5b3fdaeac7507c84bbbc61833faf433ca3f616cb85383db4f"
 
   url "https://www.deezer.com/desktop/download/artifact/darwin/x64/#{version}"
   name "Deezer"
@@ -21,6 +21,7 @@ cask "deezer" do
     "~/Library/Application Support/Caches/deezer-desktop-updater",
     "~/Library/Application Support/deezer-desktop",
     "~/Library/Logs/Deezer",
+    "~/Library/Logs/deezer-desktop",
     "~/Library/Preferences/ByHost/com.deezer.*",
     "~/Library/Preferences/com.deezer.deezer-desktop.plist",
     "~/Library/Saved Application State/com.deezer.deezer-desktop.savedState",

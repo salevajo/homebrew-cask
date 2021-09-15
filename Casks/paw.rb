@@ -1,6 +1,6 @@
 cask "paw" do
-  version "3.2.2,3002002001"
-  sha256 "2cae45407bf251840f10920cb76acb6127a0d4eebe642f7087aae47b0d56d9ec"
+  version "3.3.0,3003000001"
+  sha256 "d3c6b9578b44d34e7dd73700e701fe616880c63bd01db0d5124f01e4fad2dc08"
 
   url "https://cdn-builds.paw.cloud/paw/Paw-#{version.before_comma}.zip"
   name "Paw"

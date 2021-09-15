@@ -1,14 +1,17 @@
 cask "accurics" do
-  version "1.0.18"
-  sha256 "d4f0f9446a28d5d8cd091546ac11bc1002897cdf62d8b80b15d12ef24fedf55b"
+  version "1.0.24"
+  sha256 "e74ccff8eef37acd253c268edfc36ef3862d8de9351222dfbdbfd12c5d3f4c34"
 
   url "https://downloads.accurics.com/cli/#{version}/accurics-cli.dmg",
       user_agent: :fake
-  appcast "https://downloads.accurics.com/cli/#{version}/accurics-cli.yml",
-          must_contain: version
   name "Accurics CLI"
   desc "Security and compliance for Infrastructure as Code"
   homepage "https://www.accurics.com/"
+
+  livecheck do
+    url "https://downloads.accurics.com/cli/latest/accurics-cli.yml"
+    strategy :electron_builder
+  end
 
   binary "accurics"
 

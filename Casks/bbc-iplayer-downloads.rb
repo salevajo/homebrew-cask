@@ -1,6 +1,6 @@
 cask "bbc-iplayer-downloads" do
-  version "2.13.2"
-  sha256 "cfe932b8289b96a069bd969e83b9b8697cbaeae3cd004d64478b4ff681c9670e"
+  version "2.13.4"
+  sha256 "a4a037b3801b158656a503cd825d8aa46d5a668eeac2cdef77e549dc1921f260"
 
   url "https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/darwin-x64/BBCiPlayerDownloads-#{version}.dmg"
   name "BBC iPlayer Downloads"
@@ -12,7 +12,7 @@ cask "bbc-iplayer-downloads" do
     strategy :header_match
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   app "BBC iPlayer Downloads.app"
 end

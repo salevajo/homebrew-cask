@@ -1,13 +1,13 @@
 cask "swiftformat-for-xcode" do
-  version "0.48.4"
-  sha256 "b8d4c77059ca460a76e994ca6df562676fa486382fa73003420d9bcd5fb9e234"
+  version "0.48.11"
+  sha256 "3f4a4ed22f8ee8da2265e96c0fc22adc58baedcd67e2936d76ecf9a891c92ea7"
 
   url "https://github.com/nicklockwood/SwiftFormat/archive/#{version}.zip"
   name "SwiftFormat for Xcode"
   desc "Xcode Extension for reformatting Swift code"
   homepage "https://github.com/nicklockwood/SwiftFormat"
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :mojave"
 
   app "SwiftFormat-#{version}/EditorExtension/SwiftFormat for Xcode.app"
 

@@ -1,6 +1,6 @@
 cask "dingtalk" do
-  version "6.0.15.8"
-  sha256 "fe26c48f262ab891e63ab97aacd2cb5abc3f711b854e07754e24e03291b6473b"
+  version "6.0.26.8"
+  sha256 "02cbba85907e5d13554fb5e272cd8f99c2849851e2345ae5e9304e7290f33dda"
 
   url "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/DingTalk_v#{version}.dmg"
   name "DingTalk"

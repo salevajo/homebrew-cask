@@ -1,6 +1,6 @@
 cask "coscreen" do
-  version "2.2.26"
-  sha256 "2f6a249badf5d9852a0d64718c33435c4730739f637bb450affac18a20579a9d"
+  version "3.3.37"
+  sha256 "e1a980bd3a50a160fa0b8b869258c29f0ce96bf64f4cb5835cb4afa23a3ef036"
 
   url "https://update.coscreen.org/CoScreen-#{version}-beta.dmg",
       verified: "https://update.coscreen.org/"

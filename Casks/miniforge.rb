@@ -1,8 +1,8 @@
 cask "miniforge" do
-  version "4.10.1-4"
+  version "4.10.3-5"
 
   if Hardware::CPU.intel?
-    sha256 "5e7dd129dd0e7d49851697632dcfae1b4716113cd9eda6fbd7bf1f377547c94b"
+    sha256 "6f324566af60279518c2d03ffd69f605b335f87f72e6e7e4c2f383808e41e212"
     url "https://github.com/conda-forge/miniforge/releases/download/#{version}/Miniforge3-#{version}-MacOSX-x86_64.sh"
 
     installer script: {
@@ -10,7 +10,7 @@ cask "miniforge" do
       args:       ["-b", "-p", "#{caskroom_path}/base"],
     }
   else
-    sha256 "a902607229f335017d944f5157892a6e05ebac5868350c0e4d064a3b3ca0557d"
+    sha256 "77989d3186c21ec8de9ff22ef076e815c465c026cef087601b2bec5d02cfd889"
     url "https://github.com/conda-forge/miniforge/releases/download/#{version}/Miniforge3-#{version}-MacOSX-arm64.sh"
 
     installer script: {
@@ -22,6 +22,12 @@ cask "miniforge" do
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
   homepage "https://github.com/conda-forge/miniforge"
+
+  livecheck do
+    url :homepage
+    strategy :github_latest
+    regex(%r{href=.*?/tag/v?(\d+(?:[.-]\d+)+)["' >]}i)
+  end
 
   auto_updates true
   conflicts_with cask: "miniconda"

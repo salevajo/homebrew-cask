@@ -1,6 +1,6 @@
 cask "dotnet-sdk" do
-  version "5.0.300,f79b97b0-b1ec-4251-adf8-1022c527cc13:4372b8911d970486e8f31b0cf2e48d32"
-  sha256 "a875aacd81c185f378e24b43707b3bfd4bbe3b9ca65b7bd37cd7aefbc8cbbf5b"
+  version "5.0.401,846d5680-b804-4903-8d8d-255804bcfaeb:436101afc96998f75efb452f5ded3c1a"
+  sha256 "fe93ad11180f6d482832a846f982f439173dafeed7ffe2747c2ca270cbc63b63"
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.after_comma.before_colon}/#{version.after_colon}/dotnet-sdk-#{version.before_comma}-osx-x64.pkg"
   name ".NET SDK"

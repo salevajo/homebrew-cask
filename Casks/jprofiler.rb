@@ -1,6 +1,6 @@
 cask "jprofiler" do
-  version "12.0.2"
-  sha256 "7f24428e32a62b9d247a23feaac1671278e7fb9d97dfd5bf21bd1984cc4d2911"
+  version "12.0.3"
+  sha256 "f7e440800316277359c42a462b88d63c89b314d82ffa8764a36d1e7fc8c5a342"
 
   url "https://download-gcdn.ej-technologies.com/jprofiler/jprofiler_macos_#{version.dots_to_underscores}.dmg"
   name "JProfiler"

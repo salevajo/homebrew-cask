@@ -1,12 +1,12 @@
 cask "tempo" do
-  version "5.18.1"
+  version "5.23.1"
 
   if Hardware::CPU.intel?
-    sha256 "8676629ffe2d0834b96d4bb12c41aad539cd2c0058865f8e9ff17242c675823f"
+    sha256 "bf7541f1822e87a46a11a88bb8c1a8295815c00384abf9d6f2cacc878eb3e1ef"
 
     url "https://download.yourtempo.co/release/Tempo-#{version}.dmg"
   else
-    sha256 "758a9e1e28c7e4078a00bcafffd57448f105ba2ba45a09a1a337fc8f5381b454"
+    sha256 "98281d991fbd48a74f5a51a7acee5073341cc976c0737a346ff9aebdc55e2171"
 
     url "https://download.yourtempo.co/release-arm64/Tempo-#{version}.dmg"
   end

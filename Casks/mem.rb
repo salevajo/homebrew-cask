@@ -1,6 +1,6 @@
 cask "mem" do
-  version "0.16.0"
-  sha256 "6a7ff4ee59a3ed7006b5f3495cfcdf4a9645d503f9f888397f0f5cf4b82b3d77"
+  version "0.21.1"
+  sha256 "0f1521fe40044897521d3a93d5b6c3b122d48e0b543b306e85720b8da9ed9400"
 
   url "https://storage.googleapis.com/mem-desktop/Mem-#{version}.dmg",
       verified: "storage.googleapis.com/mem-desktop/"
@@ -12,6 +12,8 @@ cask "mem" do
     url "https://storage.googleapis.com/mem-desktop/latest-mac.yml"
     strategy :electron_builder
   end
+
+  auto_updates true
 
   app "Mem.app"
 

@@ -1,12 +1,12 @@
 cask "webstorm" do
-  version "2021.1.1,211.7142.46"
+  version "2021.2.1,212.5080.54"
 
   if Hardware::CPU.intel?
-    sha256 "b62b35faa47c59ac552b6e0604fe1c8e63897a1d4477ba302574728a78c9759b"
+    sha256 "804996ab30b890fc2e39158c2cadd0d07d97f0473d7a26304ce2577e94d0f58d"
 
     url "https://download.jetbrains.com/webstorm/WebStorm-#{version.before_comma}.dmg"
   else
-    sha256 "1426e338dd372abad1b5b97b340fab5c02dd16b15348b8d151f85e829e3baa63"
+    sha256 "9ad22b0a496ffdb638515102613ea7f96cadd4362f601f7aacf00e62d8fa754e"
 
     url "https://download.jetbrains.com/webstorm/WebStorm-#{version.before_comma}-aarch64.dmg"
   end
@@ -39,11 +39,12 @@ cask "webstorm" do
   end
 
   zap trash: [
-    "~/Library/Application Support/WebStorm#{version.major_minor}",
-    "~/Library/Caches/WebStorm#{version.major_minor}",
-    "~/Library/Logs/WebStorm#{version.major_minor}",
+    "~/Library/Preferences/com.jetbrains.WebStorm.plist",
+    "~/Library/Preferences/jetbrains.webstorm.*.plist",
     "~/Library/Preferences/WebStorm#{version.major_minor}",
-    "~/Library/Preferences/jetbrains.webstorm.aaac0500.plist",
+    "~/Library/Application Support/JetBrains/WebStorm#{version.major_minor}",
+    "~/Library/Caches/JetBrains/WebStorm#{version.major_minor}",
+    "~/Library/Logs/JetBrains/WebStorm#{version.major_minor}",
     "~/Library/Saved Application State/com.jetbrains.WebStorm.savedState",
   ]
 end

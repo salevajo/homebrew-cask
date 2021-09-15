@@ -1,13 +1,13 @@
 cask "github" do
-  version "2.8.3-dee35666"
+  version "2.9.3-2c86f4d1"
 
   if Hardware::CPU.intel?
-    sha256 "7c975ef6592695ab94fde340f2bbd4ce05d2539a1e1b1e3228c4f7d0f38ac8be"
-    url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-x64.zip",
+    sha256 "0697984f41d8349e9a58d003ebab684082b79ae2aa8782c29d4d23487d7f80d3"
+    url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-x64.zip",
         verified: "githubusercontent.com/"
   else
-    sha256 "c232f974f15e1db885db62679ff09ee122ea092aff56b2fe581887b537211104"
-    url "https://desktop.githubusercontent.com/releases/#{version}/GitHubDesktop-arm64.zip",
+    sha256 "2c3c58abc055dea3275d363b14a516044aebefc103d55bd6537093be236f452d"
+    url "https://desktop.githubusercontent.com/github-desktop/releases/#{version}/GitHubDesktop-arm64.zip",
         verified: "githubusercontent.com/"
   end
 

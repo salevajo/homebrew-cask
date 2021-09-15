@@ -1,6 +1,6 @@
 cask "sentinel" do
-  version "0.18.2"
-  sha256 "a7cbb9e7b614d3deb737a9381a5241235483a1b25a0c017f9fe1de0753ab606a"
+  version "0.18.4"
+  sha256 "7ce71e5850e46e71814ba92d0ae6596bb0b89d184b7b8a59e9921e0d4d4bd72f"
 
   url "https://releases.hashicorp.com/sentinel/#{version}/sentinel_#{version}_darwin_amd64.zip"
   name "Sentinel"
